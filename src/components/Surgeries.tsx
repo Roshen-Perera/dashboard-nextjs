@@ -1,14 +1,13 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { FemaleSymbolIcon, MaleSymbolIcon, UserMultipleIcon } from "@hugeicons/core-free-icons";
 import { Hospital01Icon } from "@hugeicons/core-free-icons";
 
-interface PatientCountProps {
+interface SurgeriesProps {
   surgeries: number
 }
 
-const PatientCount: React.FC<PatientCountProps> = ({ surgeries }) => {
+const Surgeries: React.FC<SurgeriesProps> = ({ surgeries }) => {
   return (
     <>
       <Card className="flex w-[210px] h-[100px]">
@@ -26,4 +25,4 @@ const PatientCount: React.FC<PatientCountProps> = ({ surgeries }) => {
   );
 };
 
-export default PatientCount;
+export default Surgeries;
