@@ -25,7 +25,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
   }, [chartData]);
   return (
     <>
-      <Card className="flex w-[210px] h-[230px]">
+      <Card className="flex w-[210px] h-[225px]">
         <CardHeader className="flex -mt-2 items-center gap-2 ">
           <CardTitle className="text-sm font-medium">{chartTitle}</CardTitle>
           <Calendar className=" h-4 w-4" />
