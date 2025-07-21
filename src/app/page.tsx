@@ -108,6 +108,7 @@ const Home = () => {
       </div>
       <div className="flex flex-row flex-wrap gap-4 pt-4">
         <NextPatientDetails/>
+        <CalendarDemo/>
       </div>
     </>
   );
