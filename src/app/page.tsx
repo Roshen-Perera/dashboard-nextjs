@@ -3,6 +3,7 @@
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
+import Surgeries from "@/components/Surgeries";
 import { ChartConfig } from "@/components/ui/chart";
 import React from "react";
 
@@ -82,7 +83,7 @@ const Home = () => {
       <div className="flex flex-row gap-4 justify-center flex-wrap p-4">
         <div className="flex flex-col justify-between">
           <PatientCount totalMalePatients={85} totalFemalePatients={45} />
-          
+          <Surgeries surgeries={120} />
         </div>
         <PieChartCard
           chartTitle="Appointments"

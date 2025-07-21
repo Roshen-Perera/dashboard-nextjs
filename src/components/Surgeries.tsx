@@ -4,7 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Hospital01Icon } from "@hugeicons/core-free-icons";
 
 interface SurgeriesProps {
-  surgeries: number
+  surgeries: number;
 }
 
 const Surgeries: React.FC<SurgeriesProps> = ({ surgeries }) => {
