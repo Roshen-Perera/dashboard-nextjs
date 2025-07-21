@@ -1,14 +1,15 @@
 import React from 'react'
+import { Card } from './ui/card';
 
 const NextPatientDetails = () => {
   return (
     <>
-      <div className='w-[500px]'>
+      <Card className='w-[662px]'>
         <div className="flex flex-row justify-between">
           <p>Next Patient Details</p>
-          <link>View Profile</link>
+          <p>Next Patient Details</p>
         </div>
-      </div>
+      </Card>
     </>
   );
 }
