@@ -1,5 +1,6 @@
 "use client";
 
+import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
 import { ChartConfig } from "@/components/ui/chart";
@@ -79,8 +80,9 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-row gap-4 justify-center flex-wrap p-4">
-        <div>
-          
+        <div className="flex flex-col justify-between">
+          <PatientCount />
+          <PatientCount />
         </div>
         <PieChartCard
           chartTitle="Appointments"
