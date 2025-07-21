@@ -2,6 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartConfig, ChartContainer, ChartLegend, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import { Calendar03Icon, Notification03Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { Calendar } from "lucide-react";
 
 import React from "react";
@@ -28,7 +30,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
       <Card className="flex w-[210px] h-[225px]">
         <CardHeader className="flex -mt-2 items-center gap-2 ">
           <CardTitle className="text-sm font-medium">{chartTitle}</CardTitle>
-          <Calendar className=" h-4 w-4" />
+          <HugeiconsIcon icon={Calendar03Icon} size={16} />{" "}
         </CardHeader>
         <ChartContainer
           config={chartConfig}
