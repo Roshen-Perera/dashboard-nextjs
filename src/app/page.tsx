@@ -81,8 +81,7 @@ const Home = () => {
     <>
       <div className="flex flex-row gap-4 justify-center flex-wrap p-4">
         <div className="flex flex-col justify-between">
-          <PatientCount />
-          <PatientCount />
+          <PatientCount totalMalePatients={85} totalFemalePatients={45} />
         </div>
         <PieChartCard
           chartTitle="Appointments"
