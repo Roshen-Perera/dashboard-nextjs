@@ -79,6 +79,9 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-row gap-4 justify-center flex-wrap p-4">
+        <div>
+          
+        </div>
         <PieChartCard
           chartTitle="Appointments"
           chartInnerTitle="Today"
