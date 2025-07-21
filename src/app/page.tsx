@@ -1,5 +1,6 @@
 "use client";
 
+import { CalendarDemo } from "@/components/Calender";
 import NextPatientDetails from "@/components/NextPatientDetails";
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
