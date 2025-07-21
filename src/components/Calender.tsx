@@ -11,7 +11,7 @@ export function CalendarDemo() {
       mode="single"
       selected={date}
       onSelect={setDate}
-      className="w-[370px] rounded-md border shadow-sm"
+      className="w-[350px] rounded-md border shadow-sm"
       captionLayout="dropdown"
     />
   );
