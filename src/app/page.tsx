@@ -6,8 +6,8 @@ import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
 import Surgeries from "@/components/Surgeries";
+import TodaySurgeries from "@/components/TodaySurgeries";
 import { ChartConfig } from "@/components/ui/chart";
-import { Calendar } from "lucide-react";
 import React from "react";
 
 const Home = () => {
@@ -110,6 +110,10 @@ const Home = () => {
       <div className="flex flex-row flex-wrap gap-4 pt-4">
         <NextPatientDetails/>
         <CalendarDemo />
+        
+      </div>
+      <div className="flex flex-row gap-4 pt-4">
+        <TodaySurgeries />
       </div>
     </>
   );
