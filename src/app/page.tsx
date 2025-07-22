@@ -1,12 +1,13 @@
 "use client";
 
-import { CalendarDemo } from "@/components/Calender";
+import { CalendarDemo } from "@/components/Calendar";
 import NextPatientDetails from "@/components/NextPatientDetails";
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
 import Surgeries from "@/components/Surgeries";
 import { ChartConfig } from "@/components/ui/chart";
+import { Calendar } from "lucide-react";
 import React from "react";
 
 const Home = () => {
@@ -108,7 +109,7 @@ const Home = () => {
       </div>
       <div className="flex flex-row flex-wrap gap-4 pt-4">
         <NextPatientDetails/>
-        <CalendarDemo/>
+        <CalendarDemo />
       </div>
     </>
   );
