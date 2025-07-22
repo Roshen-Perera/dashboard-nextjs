@@ -1,6 +1,7 @@
 "use client";
 
 import { CalendarDemo } from "@/components/Calendar";
+import NextAppointments from "@/components/NextAppointments";
 import NextPatientDetails from "@/components/NextPatientDetails";
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
@@ -108,12 +109,14 @@ const Home = () => {
         />
       </div>
       <div className="flex flex-row flex-wrap gap-4 pt-4">
-        <NextPatientDetails/>
+        <NextPatientDetails />
         <CalendarDemo />
-        
       </div>
       <div className="flex flex-row gap-4 pt-4">
         <TodaySurgeries />
+        <div className="-mt-6">
+          <NextAppointments />
+        </div>
       </div>
     </>
   );
