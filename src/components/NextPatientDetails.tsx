@@ -14,7 +14,7 @@ const NextPatientDetails = () => {
             View All {">"}
           </a>
         </div>
-        <div className="flex -mt-10 justify-around items-center gap-4">
+        <div className="flex -mt-10 justify-around items-center gap-4 pr-10">
           <div className="flex flex-col items-center">
             <Image
               className="rounded-full"
