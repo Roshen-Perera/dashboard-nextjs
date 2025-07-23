@@ -11,6 +11,7 @@ const TodaySurgeries = () => {
             View All Sugeries{">"}
           </a>
         </div>
+        
       </Card>
     </>
   ); 
