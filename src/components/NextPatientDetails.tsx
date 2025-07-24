@@ -7,7 +7,7 @@ import Image from "next/image";
 const NextPatientDetails = () => {
   return (
     <>
-      <Card className="bg-[#f5fffa]w-[662px] h-[252px] flex flex-col justify-between p-4">
+      <Card className="bg-[#f5fffa] w-[662px] h-[252px] flex flex-col justify-between p-4">
         <div className="-mt-2 flex flex-row justify-between">
           <p className="text-xl">Next Patient Details</p>
           <a href="#" className="text-green-500 text-sm">

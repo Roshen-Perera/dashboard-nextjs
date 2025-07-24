@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 const TodaySurgeries = () => {
   return (
     <>
-      <Card className="bg-[#f5fffa]  w-full max-w-[662px] h-[252px] flex flex-col p-4">
+      <Card className="bg-#f5fffa w-full max-w-[662px] h-[252px] flex flex-col p-4">
         <div className="-mt-2 flex flex-row justify-between">
           <p className="text-xl">Today&apos;s Surgeries</p>
           <a
