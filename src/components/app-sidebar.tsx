@@ -77,10 +77,10 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
-      <SidebarHeader>
+      <SidebarHeader className="bg-[#f5fffa]">
         <p className="text-3xl font-semibold mb-5">MediSync</p>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="bg-[#f5fffa]">
         {/* We create a SidebarGroup for each parent. */}
         {data.navMain.map((item) => (
           <SidebarGroup key={item.title}>
@@ -103,7 +103,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarGroup>
         ))}
       </SidebarContent>
-      <div className="mt-auto p-2">
+      <div className="bg-[#f5fffa] mt-auto p-2">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
