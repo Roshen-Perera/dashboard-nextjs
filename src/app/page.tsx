@@ -86,7 +86,7 @@ const Home = () => {
   return (
     <>
       <Notice />
-      <div className="flex flex-row gap-4 flex-wrap">
+      <div className="flex flex-row gap-4 flex-wrap mt-4">
         <div className="flex flex-col justify-between">
           <PatientCount totalMalePatients={85} totalFemalePatients={45} />
           <Surgeries surgeries={120} />
