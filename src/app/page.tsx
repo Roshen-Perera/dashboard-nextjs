@@ -85,39 +85,50 @@ const Home = () => {
   } satisfies ChartConfig;
   return (
     <>
-      <Notice />
-      <div className="flex flex-row gap-4 flex-wrap mt-4">
-        <div className="flex flex-col justify-between">
-          <PatientCount totalMalePatients={85} totalFemalePatients={45} />
-          <Surgeries surgeries={120} />
+      <div className="w-[1028px]">
+        <div className="flex flex-row justify-between mt-4 mb-4">
+          <p className="text-xl">Today&apos;s Surgeries</p>
+          <a
+            href="/surgeries"
+            className="text-green-500 text-sm hover:underline"
+          >
+            View All Surgeries &gt;
+          </a>
         </div>
-        <PieChartCard
-          chartTitle="Appointments"
-          chartInnerTitle="Today"
-          chartData={chartData1}
-          chartConfig={chartConfig1}
-        />
-        <PieChartCard
-          chartTitle="Ward Staff"
-          chartInnerTitle="All"
-          chartData={chartData2}
-          chartConfig={chartConfig2}
-        />
-        <PieChartCardPer
-          chartTitle="Monthly Patients"
-          chartInnerTitle="All"
-          chartData={chartData3}
-          chartConfig={chartConfig3}
-        />
-      </div>
-      <div className="flex flex-row flex-wrap gap-4 pt-4">
-        <NextPatientDetails />
-        <CalendarDemo />
-      </div>
-      <div className="flex flex-row gap-4 pt-4">
-        <TodaySurgeries />
-        <div className="-mt-6">
-          <NextAppointments />
+        <Notice />
+        <div className="flex flex-row gap-4 flex-wrap mt-4">
+          <div className="flex flex-col justify-between">
+            <PatientCount totalMalePatients={85} totalFemalePatients={45} />
+            <Surgeries surgeries={120} />
+          </div>
+          <PieChartCard
+            chartTitle="Appointments"
+            chartInnerTitle="Today"
+            chartData={chartData1}
+            chartConfig={chartConfig1}
+          />
+          <PieChartCard
+            chartTitle="Ward Staff"
+            chartInnerTitle="All"
+            chartData={chartData2}
+            chartConfig={chartConfig2}
+          />
+          <PieChartCardPer
+            chartTitle="Monthly Patients"
+            chartInnerTitle="All"
+            chartData={chartData3}
+            chartConfig={chartConfig3}
+          />
+        </div>
+        <div className="flex flex-row flex-wrap gap-4 pt-4">
+          <NextPatientDetails />
+          <CalendarDemo />
+        </div>
+        <div className="flex flex-row gap-4 pt-4">
+          <TodaySurgeries />
+          <div className="-mt-6">
+            <NextAppointments />
+          </div>
         </div>
       </div>
     </>
