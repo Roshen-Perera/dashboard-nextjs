@@ -30,7 +30,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
   }, [chartData]);
   return (
     <>
-      <Card className="flex w-[350px] h-[225px]">
+      <Card className="bg-#f5fffa flex w-[350px] h-[225px]">
         <CardHeader className="flex -mt-2  justify-between items-center">
           <div className="flex gap-4">
             <CardTitle className="text-sm font-medium">{chartTitle}</CardTitle>
@@ -98,18 +98,18 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
               </PieChart>
             </ChartContainer>
             <div className="flex flex-col items-start ml-7 mb-3 gap-2">
-                {chartData.map((item, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <div
-                      className="w-4 h-4 rounded-full"
-                      style={{ backgroundColor: item.fill }}
-                    />
-                    <span className="text-sm text-muted-foreground">
-                      {item.status}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              {chartData.map((item, index) => (
+                <div key={index} className="flex items-center gap-2">
+                  <div
+                    className="w-4 h-4 rounded-full"
+                    style={{ backgroundColor: item.fill }}
+                  />
+                  <span className="text-sm text-muted-foreground">
+                    {item.status}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </CardContent>
       </Card>

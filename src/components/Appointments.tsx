@@ -10,7 +10,7 @@ interface AppointmentProps {
 
 const Appointments: React.FC<AppointmentProps> = ({ name, image, type, time }) => {
   return (
-    <div className="flex flex-row justify-between items-center gap-4">
+    <div  className="flex flex-row justify-between items-center gap-4">
       <div className="flex items-center gap-4">
         <Image
           src={image}

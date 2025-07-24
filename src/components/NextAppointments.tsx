@@ -6,7 +6,7 @@ import Image from 'next/image';
 const NextAppointments = () => {
   return (
     <div>
-      <Card className="w-[348px] h-[276px] flex flex-col p-4">
+      <Card className="bg-#f5fffa w-[348px] h-[276px] flex flex-col p-4">
         <div className="-mt-2 flex flex-row justify-between">
           <p className="text-xl">Today&apos;s Appointments</p>
         </div>
@@ -24,7 +24,6 @@ const NextAppointments = () => {
             type="Confirmed"
             image="/assets/bronson.png"
           />
-          
         </div>
       </Card>
     </div>

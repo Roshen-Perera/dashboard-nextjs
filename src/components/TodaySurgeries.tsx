@@ -5,7 +5,7 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 const TodaySurgeries = () => {
   return (
     <>
-      <Card className="w-full max-w-[662px] h-[252px] flex flex-col p-4">
+      <Card className="bg-#f5fffa w-full max-w-[662px] h-[252px] flex flex-col p-4">
         <div className="-mt-2 flex flex-row justify-between">
           <p className="text-xl">Today&apos;s Surgeries</p>
           <a
@@ -20,15 +20,9 @@ const TodaySurgeries = () => {
           <Table className="min-w-full table-fixed">
             <TableHeader>
               <TableRow className="border-b border-gray-300">
-                <TableHead className="w-1/3 text-left">
-                  Time
-                </TableHead>
-                <TableHead className="w-1/3 text-left">
-                  Patient name
-                </TableHead>
-                <TableHead className="w-1/3 text-right">
-                  Surgery Type
-                </TableHead>
+                <TableHead className="w-1/3 text-left">Time</TableHead>
+                <TableHead className="w-1/3 text-left">Patient name</TableHead>
+                <TableHead className="w-1/3 text-right">Surgery Type</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -40,7 +34,9 @@ const TodaySurgeries = () => {
               <TableRow className="hover:bg-muted border-0 cursor-pointer">
                 <TableCell className="w-1/3 text-left">10:30 AM</TableCell>
                 <TableCell className="w-1/3 text-left">Dr. John Doe</TableCell>
-                <TableCell className="w-1/3 text-right">Dolor Sit Amet</TableCell>
+                <TableCell className="w-1/3 text-right">
+                  Dolor Sit Amet
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
