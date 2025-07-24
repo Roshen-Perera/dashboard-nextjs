@@ -1,8 +1,6 @@
 import React from 'react'
 import { Card } from './ui/card';
 import Appointments from './Appointments';
-import Image from 'next/image';
-
 const NextAppointments = () => {
   return (
     <div>
