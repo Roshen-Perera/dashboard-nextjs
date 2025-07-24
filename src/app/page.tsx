@@ -12,6 +12,7 @@ import Surgeries from "@/components/Surgeries";
 import TodaySurgeries from "@/components/TodaySurgeries";
 import { ChartConfig } from "@/components/ui/chart";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import { Bell } from "lucide-react";
 import React from "react";
 
 const Home = () => {
@@ -91,18 +92,19 @@ const Home = () => {
         <AppSidebar />
         <SidebarInset>
           <div className="pl-4 pr-4 bg-[#f5fffa]">
-              <div className="flex flex-row justify-between items-center mt-4 mb-4">
-                <input
-                  type="text"
-                  placeholder="Search hear..."
-                  className="text-sm px-3 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-400"
-                />
-                <a
-                  href="/surgeries"
-                  className="text-green-500 text-sm hover:underline"
-                >
-                  View All Surgeries &gt;
-                </a>
+            <div className="flex flex-row justify-between items-center mt-4 mb-4">
+              <input
+                type="text"
+                placeholder="Search hear..."
+                className="text-sm px-3 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-400"
+              />
+              <div className="flex items-center gap-2 text-sm font-medium rounded-lg pr-1 pl-1">
+                <Bell />
+                |
+                <div>
+                  
+                </div>
+              </div>
             </div>
 
             <Notice />
