@@ -12,7 +12,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon,  Setting06FreeIcons,  Settings01FreeIcons,  UserSquareIcon } from "@hugeicons/core-free-icons";
+import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon, Settings01FreeIcons,  UserSquareIcon } from "@hugeicons/core-free-icons";
 
 // This is sample data.
 const data = {
@@ -77,7 +77,7 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
-      <SidebarHeader className="bg-[#f5fffa]">
+      <SidebarHeader className="bg-[#f5fffa] items-center">
         <p className="text-3xl font-semibold mb-5">MediSync</p>
       </SidebarHeader>
       <SidebarContent className="bg-[#f5fffa]">

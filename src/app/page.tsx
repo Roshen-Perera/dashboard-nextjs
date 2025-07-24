@@ -91,15 +91,20 @@ const Home = () => {
         <AppSidebar />
         <SidebarInset>
           <div className="pl-4 pr-4 bg-[#f5fffa]">
-            <div className="flex flex-row justify-between mt-4 mb-4">
-              <p className="text-xl">Today&apos;s Surgeries</p>
-              <a
-                href="/surgeries"
-                className="text-green-500 text-sm hover:underline"
-              >
-                View All Surgeries &gt;
-              </a>
+              <div className="flex flex-row justify-between items-center mt-4 mb-4">
+                <input
+                  type="text"
+                  placeholder="Search hear..."
+                  className="text-sm px-3 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-400"
+                />
+                <a
+                  href="/surgeries"
+                  className="text-green-500 text-sm hover:underline"
+                >
+                  View All Surgeries &gt;
+                </a>
             </div>
+
             <Notice />
             <div className="flex flex-row gap-4 flex-wrap mt-4">
               <div className="flex flex-col justify-between">
