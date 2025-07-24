@@ -11,13 +11,11 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { LayoutDashboard } from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon, RecordIcon, UserSquareIcon } from "@hugeicons/core-free-icons";
+import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon,  Setting06FreeIcons,  Settings01FreeIcons,  UserSquareIcon } from "@hugeicons/core-free-icons";
 
 // This is sample data.
 const data = {
-  versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
   navMain: [
     {
       title: "Getting Started",
@@ -78,9 +76,9 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar {...props}>
+    <Sidebar className="bg-red" {...props}>
       <SidebarHeader>
-        <p className="text-3xl font-semibold">MediSync</p>
+        <p className="text-3xl font-semibold mb-5">MediSync</p>
       </SidebarHeader>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
@@ -90,7 +88,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center mb-3">
                       <SidebarMenuButton asChild isActive={item.isActive}>
                         <a href={item.url} className="flex items-center gap-2">
                           <HugeiconsIcon icon={item.icon} />
@@ -105,6 +103,29 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarGroup>
         ))}
       </SidebarContent>
+      <div className="mt-auto p-2">
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild>
+              <a href="#settings" className="flex items-center gap-2">
+                <HugeiconsIcon icon={Settings01FreeIcons} />
+                Settings
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild>
+              <a
+                href="#signout"
+                className="flex items-center gap-2 text-red-500"
+              >
+                <HugeiconsIcon icon={UserSquareIcon} />
+                Sign Out
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </div>
       <SidebarRail />
     </Sidebar>
   );
