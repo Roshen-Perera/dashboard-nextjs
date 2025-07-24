@@ -92,7 +92,7 @@ const Home = () => {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset>
-          <div className="ml-5 w-[1028px]">
+          <div className="pl-4 pr-4">
             <div className="flex flex-row justify-between mt-4 mb-4">
               <p className="text-xl">Today&apos;s Surgeries</p>
               <a
