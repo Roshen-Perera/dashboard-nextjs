@@ -3,6 +3,7 @@
 import { CalendarDemo } from "@/components/Calendar";
 import NextAppointments from "@/components/NextAppointments";
 import NextPatientDetails from "@/components/NextPatientDetails";
+import Notice from "@/components/Notice";
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
@@ -84,6 +85,7 @@ const Home = () => {
   } satisfies ChartConfig;
   return (
     <>
+      <Notice />
       <div className="flex flex-row gap-4 flex-wrap">
         <div className="flex flex-col justify-between">
           <PatientCount totalMalePatients={85} totalFemalePatients={45} />
