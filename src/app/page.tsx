@@ -10,10 +10,8 @@ import PieChartCard from "@/components/PieChart";
 import PieChartCardPer from "@/components/PieChartPer";
 import Surgeries from "@/components/Surgeries";
 import TodaySurgeries from "@/components/TodaySurgeries";
-import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { ChartConfig } from "@/components/ui/chart";
-import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
-import { Separator } from "@radix-ui/react-separator";
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import React from "react";
 
 const Home = () => {
@@ -92,7 +90,7 @@ const Home = () => {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset>
-          <div className="pl-4 pr-4">
+          <div className="pl-4 pr-4 bg-[#f5fffa]">
             <div className="flex flex-row justify-between mt-4 mb-4">
               <p className="text-xl">Today&apos;s Surgeries</p>
               <a
