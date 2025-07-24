@@ -86,6 +86,7 @@ const Home = () => {
   return (
     <>
       <div className="w-[1028px]">
+      
         <div className="flex flex-row justify-between mt-4 mb-4">
           <p className="text-xl">Today&apos;s Surgeries</p>
           <a
