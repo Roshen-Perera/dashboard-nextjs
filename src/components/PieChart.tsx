@@ -26,7 +26,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
   }, [chartData]);
   return (
     <>
-      <Card className="bg-#f5fffa flex w-[210px] h-[225px]">
+      <Card className="bg-[#f5fffa] flex w-[210px] h-[225px]">
         <CardHeader className="flex -mt-2 items-center gap-2 ">
           <CardTitle className="text-sm font-medium">{chartTitle}</CardTitle>
           <HugeiconsIcon icon={Calendar03Icon} size={16} />{" "}

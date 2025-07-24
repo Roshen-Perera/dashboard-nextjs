@@ -10,7 +10,7 @@ interface SurgeriesProps {
 const Surgeries: React.FC<SurgeriesProps> = ({ surgeries }) => {
   return (
     <>
-      <Card className="bg-#f5fffa flex w-[210px] h-[100px]">
+      <Card className="bg-[#f5fffa] flex w-[210px] h-[100px]">
         <CardHeader className="flex -mt-2 items-center gap-2 ">
           <CardTitle>Total Surgeries</CardTitle>
           <HugeiconsIcon icon={Hospital01Icon} size={16} />

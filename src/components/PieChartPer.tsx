@@ -30,7 +30,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
   }, [chartData]);
   return (
     <>
-      <Card className="bg-#f5fffa flex w-[350px] h-[225px]">
+      <Card className="bg-[#f5fffa] flex w-[350px] h-[225px]">
         <CardHeader className="flex -mt-2  justify-between items-center">
           <div className="flex gap-4">
             <CardTitle className="text-sm font-medium">{chartTitle}</CardTitle>
