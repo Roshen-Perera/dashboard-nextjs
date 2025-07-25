@@ -4,6 +4,8 @@ import * as React from "react";
 import { Card } from "./ui/card";
 export function CalendarDemo() {
 
-return <Card className="w-[348px] h-[227px] bg-[#f5fffa]"></Card>;
+return <Card className="w-[348px] h-[227px] bg-[#f5fffa]">
+    
+</Card>;
 }
   
