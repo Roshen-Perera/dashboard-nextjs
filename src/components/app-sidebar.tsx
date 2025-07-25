@@ -78,7 +78,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader className="bg-[#f5fffa] items-center">
-        <p className="text-3xl font-semibold mb-5">MediSync</p>
+        <p className="text-3xl font-semibold mb-4  mt-4">MediSync</p>
       </SidebarHeader>
       <SidebarContent className="bg-[#f5fffa]">
         {/* We create a SidebarGroup for each parent. */}
