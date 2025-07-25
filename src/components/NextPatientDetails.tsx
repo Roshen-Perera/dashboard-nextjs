@@ -42,16 +42,16 @@ const NextPatientDetails = () => {
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col">
-              <p className="text-lg">Patient ID</p>
-              <p className="text-base text-gray-500">123456789</p>
+              <p className="text-lg">Height</p>
+              <p className="text-base text-gray-500">155 cm</p>
             </div>
             <div className="flex flex-col">
-              <p className="text-lg">Gender</p>
-              <p className="text-base text-gray-500">Male</p>
+              <p className="text-lg">Weight</p>
+              <p className="text-base text-gray-500">50 Kg</p>
             </div>
             <div className="flex flex-col">
-              <p className="text-lg">Age</p>
-              <p className="text-base text-gray-500">32</p>
+              <p className="text-lg">Last Visit</p>
+              <p className="text-base text-gray-500">2024.01.24</p>
             </div>
           </div>
         </div>
