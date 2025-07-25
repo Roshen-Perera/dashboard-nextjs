@@ -69,7 +69,7 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 12} // Move down
-                          className="fill-foreground text-3xl font-semibold"
+                          className="fill-foreground text-2xl"
                         >
                           {totalVisitors.toLocaleString()}
                         </tspan>
