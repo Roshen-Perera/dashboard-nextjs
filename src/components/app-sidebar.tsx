@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sidebar"
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon, Settings01FreeIcons,  UserSquareIcon } from "@hugeicons/core-free-icons";
+import Image from "next/image";
 
 // This is sample data.
 const data = {
@@ -25,49 +26,49 @@ const data = {
           title: "Dashboard",
           url: "#",
           isActive: false,
-          icon: DashboardSquare03Icon,
+          icon: "/assets/icons/dashboard.png",
         },
         {
           title: "Profile",
           url: "#",
           isActive: false,
-          icon: UserSquareIcon,
+          icon: "/assets/icons/doctor.png",
         },
         {
           title: "Appointments",
           url: "#",
           isActive: false,
-          icon: Calendar03Icon,
+          icon: "/assets/icons/calendar.png",
         },
         {
           title: "Patients",
           url: "#",
           isActive: false,
-          icon: PatientIcon,
+          icon: "/assets/icons/patient.png",
         },
         {
           title: "Surgeries",
           url: "#",
           isActive: false,
-          icon: Doctor01Icon,
+          icon: "/assets/icons/surgery.png",
         },
         {
           title: "Payments",
           url: "#",
           isActive: false,
-          icon: PaymentIcon,
+          icon: "/assets/icons/payments.png",
         },
         {
           title: "Medical Records",
           url: "#",
           isActive: false,
-          icon: MedicalFileIcon,
+          icon: "/assets/icons/records.png",
         },
         {
           title: "Messages",
           url: "#",
           isActive: false,
-          icon: Message01FreeIcons,
+          icon: "/assets/icons/messages.png",
         },
       ],
     },
@@ -91,7 +92,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <div className="flex items-center mb-3">
                       <SidebarMenuButton asChild isActive={item.isActive}>
                         <a href={item.url} className="flex items-center gap-2">
-                          <HugeiconsIcon icon={item.icon} />
+                          <Image
+                            src={item.icon}
+                            alt={item.title}
+                            width={15}
+                            height={15}
+                          />
                           {item.title}
                         </a>
                       </SidebarMenuButton>
@@ -108,7 +114,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <a href="#settings" className="flex items-center gap-2">
-                <HugeiconsIcon icon={Settings01FreeIcons} />
+                <Image
+                  src={"/assets/icons/settings.png"}
+                  width={15}
+                  height={15}
+                  alt="Settings Icon"
+                />
                 Settings
               </a>
             </SidebarMenuButton>
@@ -117,9 +128,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton asChild>
               <a
                 href="#signout"
-                className="flex items-center gap-2 text-red-500"
+                className="flex items-center gap-2"
               >
-                <HugeiconsIcon icon={UserSquareIcon} />
+                <Image
+                  src={"/assets/icons/signout.png"}
+                  width={15}
+                  height={15}
+                  alt="Sign Out Icon"
+                />
                 Sign Out
               </a>
             </SidebarMenuButton>
