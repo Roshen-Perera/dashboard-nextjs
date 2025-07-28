@@ -100,7 +100,7 @@ const Home = () => {
                 className="text-sm px-3 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-400"
               />
               <div className="flex items-center gap-2 text-sm font-medium rounded-lg pr-1 pl-1">
-                <Bell />
+                <Image src={"/assets/icons/bell.png"} width={20} height={20} alt="Notification" />
                 |
                 <Image
                   src={"/assets/dragisa.png"}
