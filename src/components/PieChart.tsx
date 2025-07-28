@@ -32,7 +32,6 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
             width={15}
             height={15}
             alt="Calendar"
-            className="text-muted-foreground"
           />
         </CardHeader>
         <ChartContainer
