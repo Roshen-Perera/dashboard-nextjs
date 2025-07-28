@@ -6,6 +6,7 @@ import {
   MaleSymbolIcon,
   UserMultipleIcon,
 } from "@hugeicons/core-free-icons";
+import Image from "next/image";
 
 interface PatientCountProps {
   totalMalePatients: number;
@@ -18,7 +19,12 @@ const PatientCount: React.FC<PatientCountProps> = ({ totalMalePatients, totalFem
       <Card className=" bg-[#f5fffa] flex w-[210px] h-[100px]">
         <CardHeader className="flex -mt-2 items-center gap-2 ">
           <CardTitle>Total Patients</CardTitle>
-          <HugeiconsIcon icon={UserMultipleIcon} size={16} />
+          <Image 
+            src={"/assets/icons/people.png"}
+            width={15}
+            height={15}
+            alt="Patient Icon"
+          />
         </CardHeader>
         <CardContent>
           <div className="-mt-2 flex flex-row justify-between items-center">
