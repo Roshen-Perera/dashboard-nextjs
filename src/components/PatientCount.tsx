@@ -4,7 +4,6 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import {
   FemaleSymbolIcon,
   MaleSymbolIcon,
-  UserMultipleIcon,
 } from "@hugeicons/core-free-icons";
 import Image from "next/image";
 

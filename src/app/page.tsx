@@ -12,7 +12,6 @@ import Surgeries from "@/components/Surgeries";
 import TodaySurgeries from "@/components/TodaySurgeries";
 import { ChartConfig } from "@/components/ui/chart";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import { Bell } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
