@@ -11,8 +11,6 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Calendar03Icon, DashboardSquare03Icon, Doctor01Icon, MedicalFileIcon, Message01FreeIcons, PatientIcon, PaymentIcon, Settings01FreeIcons,  UserSquareIcon } from "@hugeicons/core-free-icons";
 import Image from "next/image";
 
 // This is sample data.
@@ -91,7 +89,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <SidebarMenuItem key={item.title}>
                     <div className="flex items-center mb-3">
                       <SidebarMenuButton asChild isActive={item.isActive}>
-                        <a href={item.url} className="flex items-center gap-2">
+                        <a href={item.url} className="flex items-center gap-2 ">
                           <Image
                             src={item.icon}
                             alt={item.title}
