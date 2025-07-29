@@ -79,7 +79,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="bg-[#f5fffa] items-center">
         <p className="text-3xl font-semibold mb-4  mt-4">MediSync</p>
       </SidebarHeader>
-      <SidebarContent className="bg-[#f5fffa] border-r border-gray-200">
+      <SidebarContent className="bg-[#f5fffa]">
         {/* We create a SidebarGroup for each parent. */}
         {data.navMain.map((item) => (
           <SidebarGroup key={item.title}>
