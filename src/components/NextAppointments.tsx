@@ -22,6 +22,8 @@ const NextAppointments = () => {
             type="Confirmed"
             image="/assets/bronson.png"
           />
+          <hr />
+          <p className='text-xs text-color-red'>View all Appointments</p>
         </div>
       </Card>
     </div>
