@@ -1,5 +1,6 @@
 "use client";
 
+import "./page.css";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";

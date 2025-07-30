@@ -1,5 +1,7 @@
 "use client";
 
+
+import "./page.css";
 import React from "react";
 import { z } from "zod";
 import { FieldValues, useForm } from "react-hook-form";
