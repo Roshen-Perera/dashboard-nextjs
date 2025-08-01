@@ -1,10 +1,12 @@
 "use client";
 
+import { ro } from "date-fns/locale";
 import "./page.css";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import z from "zod";
+import { useRouter } from "next/navigation";
 
 const schema = z.object({
   name: z.string().min(1, { message: "Username is required" }),
@@ -27,39 +29,42 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
-const onSubmit = (data: FieldValues) => {
-  const registerUser = async () => {
-    try {
-      const response = await fetch("/api/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
 
-      if (!response.ok) {
-        throw new Error("Failed to register");
-      }
-
-      const result = await response.json();
-      console.log("Registration successful:", result);
-      window.location.href = "/login";
-    } catch (error) {
-      console.error("Error during registration:", error);
-    }
-  };
-
-  // 👇 You need to call the function here
-  registerUser();
-};
 
 const Login = () => {
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
+  const router = useRouter();
+  const onSubmit = (data: FieldValues) => {
+    const registerUser = async () => {
+      try {
+        const response = await fetch("/api/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to register");
+        }
+
+        const result = await response.json();
+        console.log("Registration successful:", result);
+        router.push("/login"); // Redirect to login page after successful registration
+      } catch (error) {
+        console.error("Error during registration:", error);
+      }
+    };
+
+    // 👇 You need to call the function here
+    registerUser();
+  };
   return (
     <>
       <div className="absolute right-0 top-0 h-full w-[700px] bg-green-900/50 backdrop-blur-md rounded-tl-[50px] rounded-bl-[50px] z-10">
