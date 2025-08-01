@@ -6,6 +6,9 @@ import { z } from "zod";
 import { FieldValues, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
+
+// Define the schema for form validation
 
 const schema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
@@ -16,33 +19,36 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
-const onSubmit = (data: FieldValues) => {
-  const loginUser = async () => {
-    try {
-      const response = await signIn("credentials", {
-        ...data,
-        redirect: false,
-      });
 
-      if (response?.error) {
-        throw new Error(response.error);
-      }
-
-      // Redirect to dashboard on successful login
-      window.location.href = "/";
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  }
-  // Call the function to handle login
-  loginUser();
-};
 const Login = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
+  const router = useRouter();
+
+  const onSubmit = (data: FieldValues) => {
+    const loginUser = async () => {
+      try {
+        const response = await signIn("credentials", {
+          ...data,
+          redirect: false,
+        });
+
+        if (response?.error) {
+          throw new Error(response.error);
+        }
+
+        // Redirect to dashboard on successful login
+        router.push("/");
+      } catch (error) {
+        console.error("Error during login:", error);
+      }
+    };
+    // Call the function to handle login
+    loginUser();
+  };
   return (
     <>
       <div className="absolute right-0 top-0 h-full w-[700px] bg-green-900/50 backdrop-blur-md rounded-tl-[50px] rounded-bl-[50px] z-10">
