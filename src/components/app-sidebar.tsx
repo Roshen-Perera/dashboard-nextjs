@@ -127,8 +127,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton asChild>
               <a
                 onClick={() => {
-                  signOut();
-                  console.log("Sign out clicked");
+                  if (confirm("Are you sure you want to sign out?")) {
+                    signOut();
+                    console.log("Sign out clicked");
+                  }
                 }}
                 className="flex items-center gap-2"
               >
