@@ -1,7 +1,6 @@
-// app/dashboard/page.tsx
+
 import { getServerSession } from "next-auth";
-// Update the import path to the correct location of authOptions
-import { authOptions } from "@/lib/auth"; // ✅ use alias or relative path
+import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import Home from "./home";
 
@@ -10,6 +9,7 @@ export default async function DashboardPage() {
 
   if (!session) {
     redirect("/login");
+    
   }
 
   return <Home />;

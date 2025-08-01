@@ -12,6 +12,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import Image from "next/image";
+import { signOut } from "next-auth/react";
 
 // This is sample data.
 const data = {
@@ -125,7 +126,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <a
-                href="#signout"
+                onClick={() => {
+                  signOut();
+                  console.log("Sign out clicked");
+                }}
                 className="flex items-center gap-2"
               >
                 <Image
