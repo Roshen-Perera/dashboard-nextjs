@@ -1,6 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
+import Profile from "@/components/Profile";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
 import React from "react";
@@ -40,6 +41,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <Profile/>
         </SidebarInset>
       </SidebarProvider>
     </>
