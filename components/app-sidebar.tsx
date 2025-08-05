@@ -23,13 +23,13 @@ const data = {
       items: [
         {
           title: "Dashboard",
-          url: "#",
+          url: "/",
           isActive: false,
           icon: "/assets/icons/dashboard.png",
         },
         {
           title: "Profile",
-          url: "#",
+          url: "/profile",
           isActive: false,
           icon: "/assets/icons/doctor.png",
         },
