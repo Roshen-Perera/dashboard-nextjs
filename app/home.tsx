@@ -2,8 +2,8 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import { CalendarDemo } from "@/components/calendar";
-import NextAppointments from "@/components/NextAppointments";
-import NextPatientDetails from "@/components/NextPatientDetails";
+import NextAppointments from "@/components/nextAppointments";
+import NextPatientDetails from "@/components/nextPatientDetails";
 import Notice from "@/components/Notice";
 import PatientCount from "@/components/PatientCount";
 import PieChartCard from "@/components/PieChart";
