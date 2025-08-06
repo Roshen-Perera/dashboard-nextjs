@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from './ui/card';
-import Appointments from './Appointments';
+import Appointments from './appointments';
 const NextAppointments = () => {
   return (
     <div>
