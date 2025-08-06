@@ -1,6 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
+import BasicInfo from "@/components/BasicInfo";
 import Profile from "@/components/Profile";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
@@ -41,6 +42,9 @@ const Home = () => {
               </div>
             </div>
             <Profile />
+            <div className="flex flex-row gap-4">
+              <BasicInfo />
+            </div>
           </div>
         </SidebarInset>
       </SidebarProvider>
