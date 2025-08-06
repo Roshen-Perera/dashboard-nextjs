@@ -40,8 +40,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <Profile />
           </div>
-          <Profile/>
         </SidebarInset>
       </SidebarProvider>
     </>
