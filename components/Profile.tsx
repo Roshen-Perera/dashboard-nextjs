@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "./ui/card";
 
-const profile = () => {
+const Profile = () => {
   return (
     <Card className="bg-[#f5fffa] w-[1028px] h-[245px] flex items-center  p-4">
 
@@ -9,5 +9,5 @@ const profile = () => {
   );
 };
 
-export default profile;
+export default Profile;
   

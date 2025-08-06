@@ -8,7 +8,7 @@ interface AppointmentProps {
   time: string;
 }
 
-const Appointments: React.FC<AppointmentProps> = ({ name, image, type, time }) => {
+const Appointment: React.FC<AppointmentProps> = ({ name, image, type, time }) => {
   return (
     <div  className="flex flex-row justify-between items-center gap-4">
       <div className="flex items-center gap-4">
@@ -29,4 +29,4 @@ const Appointments: React.FC<AppointmentProps> = ({ name, image, type, time }) =
   );
 }
 
-export default Appointments
+export default Appointment;

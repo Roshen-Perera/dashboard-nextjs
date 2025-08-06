@@ -2,13 +2,13 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import { Calendar } from "@/components/Calendar";
-import NextAppointments from "@/components/nextAppointments";
-import NextPatientDetails from "@/components/nextPatientDetails";
-import Notice from "@/components/notice";
-import PatientCount from "@/components/patientCount";
-import PieChartCard from "@/components/pieChartPer";
-import Surgeries from "@/components/surgeries";
-import TodaySurgeries from "@/components/todaySurgeries";
+import NextAppointments from "@/components/NextAppointment";
+import NextPatientDetails from "@/components/NextPatientDetail";
+import Notice from "@/components/Notice";
+import PatientCount from "@/components/PatientCount";
+import PieChartCard from "@/components/PieChartPer";
+import Surgeries from "@/components/Surgeries";
+import TodaySurgeries from "@/components/TodaySurgeries";
 
 import { ChartConfig } from "@/components/ui/chart";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";

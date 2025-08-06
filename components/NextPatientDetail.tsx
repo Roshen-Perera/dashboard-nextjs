@@ -4,7 +4,7 @@ import React from "react";
 import { Card } from "./ui/card";
 import Image from "next/image";
 
-const NextPatientDetails = () => {
+const NextPatientDetail = () => {
   return (
     <>
       <Card className="bg-[#f5fffa] w-[662px] h-[252px] flex flex-col justify-between p-4">
@@ -60,4 +60,4 @@ const NextPatientDetails = () => {
   );
 };
 
-export default NextPatientDetails;
+export default NextPatientDetail;

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const conSchedule = () => {
+const ConSchedule = () => {
   return <div></div>;
 };
 
-export default conSchedule;
+export default ConSchedule;

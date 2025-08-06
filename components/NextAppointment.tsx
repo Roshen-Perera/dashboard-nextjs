@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from './ui/card';
-import Appointments from './appointments';
-const NextAppointments = () => {
+import Appointments from './Appointment';
+const NextAppointment = () => {
   return (
     <div>
       <Card className="bg-#f5fffa w-[348px] h-[276px] flex flex-col p-4">
@@ -30,4 +30,4 @@ const NextAppointments = () => {
   );
 }
 
-export default NextAppointments;
+export default NextAppointment;
