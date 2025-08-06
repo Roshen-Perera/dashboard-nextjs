@@ -4,7 +4,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { Calendar } from "@/components/Calendar";
 import NextAppointment from "@/components/NextAppointment";
 import NextPatientDetails from "@/components/NextPatientDetail";
-import Notice from "@/components/notice";
+import Notice from "@/components/Notices";
 import PatientCount from "@/components/patientCount";
 import PieChartCard from "@/components/pieChart";
 import Surgeries from "@/components/surgeries";
