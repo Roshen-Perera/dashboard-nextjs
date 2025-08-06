@@ -1,8 +1,9 @@
 import React from 'react'
+import { Card } from './ui/card';
 
 const ConSchedule = () => {
   return (
-    <div className="w-[558px] h-[180px] bg-[#f5fffa] rounded-lg p-4 border"></div>
+    <Card className="w-[558px] h-[180px] bg-[#f5fffa] rounded-lg p-4 border"></Card>
   );
 };
 
