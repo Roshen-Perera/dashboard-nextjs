@@ -1,7 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
-import { CalendarDemo } from "@/components/calendar";
+import { Calendar } from "@/components/Calendar";
 import NextAppointments from "@/components/nextAppointments";
 import NextPatientDetails from "@/components/nextPatientDetails";
 import Notice from "@/components/notice";
@@ -147,7 +147,7 @@ const Home = () => {
             </div>
             <div className="flex flex-row flex-wrap gap-4 pt-4">
               <NextPatientDetails />
-              <CalendarDemo />
+              <Calendar />
             </div>
             <div className="flex flex-row gap-4 pt-4">
               <TodaySurgeries />

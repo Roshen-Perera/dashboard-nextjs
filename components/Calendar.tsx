@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ children, className }) => (
   <div className={className}>{children}</div>
 );
 
-export function CalendarDemo() {
+export function Calendar() {
   const [currentDate, setCurrentDate] = React.useState(new Date());
 
   const months = [
