@@ -138,7 +138,7 @@ const Home = () => {
                 chartData={chartData2}
                 chartConfig={chartConfig2}
               />
-              <PieChartCardPer
+              <PieChartCard
                 chartTitle="Monthly Patients"
                 chartInnerTitle="All"
                 chartData={chartData3}
