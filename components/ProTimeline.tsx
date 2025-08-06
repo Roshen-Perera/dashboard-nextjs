@@ -2,8 +2,8 @@ import React from 'react'
 
 const ProTimeline = () => {
   return (
-    <div className="w-[328px] h-[649px] bg-[#f5fffa] flex items-center">
-        
+    <div className="w-[469px] h-[350px] bg-[#f5fffa] flex items-center border rounded-lg p-4">
+
     </div>
   );
 }
