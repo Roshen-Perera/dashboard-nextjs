@@ -7,12 +7,12 @@ import {
 } from "@hugeicons/core-free-icons";
 import Image from "next/image";
 
-interface patientCountProps {
+interface PatientCountProps {
   totalMalePatients: number;
   totalFemalePatients: number;
 }
 
-const patientCount: React.FC<patientCountProps> = ({ totalMalePatients, totalFemalePatients }) => {
+const PatientCount: React.FC<PatientCountProps> = ({ totalMalePatients, totalFemalePatients }) => {
   return (
     <>
       <Card className=" bg-[#f5fffa] flex w-[210px] h-[100px]">
@@ -46,4 +46,4 @@ const patientCount: React.FC<patientCountProps> = ({ totalMalePatients, totalFem
   );
 };
 
-export default patientCount;
+export default PatientCount;
