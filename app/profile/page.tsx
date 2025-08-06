@@ -2,6 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/BasicInfo";
+import LicenseInfo from "@/components/LiscenseInfo";
 import Profile from "@/components/Profile";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
@@ -44,6 +45,7 @@ const Home = () => {
             <Profile />
             <div className="pt-4 flex flex-row gap-4">
               <BasicInfo />
+              <LicenseInfo />
             </div>
           </div>
         </SidebarInset>
