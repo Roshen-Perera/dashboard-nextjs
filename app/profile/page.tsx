@@ -2,6 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/BasicInfo";
+import ContactDetails from "@/components/ContactDetails";
 import LicenseInfo from "@/components/LiscenseInfo";
 import Profile from "@/components/Profile";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
@@ -46,6 +47,7 @@ const Home = () => {
             <div className="pt-4 flex flex-row gap-4">
               <BasicInfo />
               <LicenseInfo />
+              <ContactDetails />
             </div>
           </div>
         </SidebarInset>
