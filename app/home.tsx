@@ -1,7 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
-import { CalendarDemo } from "@/components/Calendar";
+import { CalendarDemo } from "@/components/calendar";
 import NextAppointments from "@/components/NextAppointments";
 import NextPatientDetails from "@/components/NextPatientDetails";
 import Notice from "@/components/Notice";
