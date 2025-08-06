@@ -1,8 +1,9 @@
 import React from 'react'
+import { Card } from './ui/card';
 
 const BasicInfo = () => {
   return (
-    <div className="w-[332px] h-[235px] bg-[#f5fffa] border border-green-100 rounded-lg shadow-sm"></div>
+    <Card className="w-[332px] h-[235px] bg-[#f5fffa]"></Card>
   );
 };
 export default BasicInfo;
