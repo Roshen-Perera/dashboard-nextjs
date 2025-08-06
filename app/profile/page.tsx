@@ -2,6 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/BasicInfo";
+import ConSchedule from "@/components/ConSchedule";
 import ContactDetails from "@/components/ContactDetail";
 import LicenseInfo from "@/components/LicenseInfo";
 import Profile from "@/components/Profiles";
@@ -52,6 +53,7 @@ const Home = () => {
             </div>
             <div className="pt-4 flex flex-row gap-4">
               <ProTimeline />
+              <ConSchedule />
             </div>
           </div>
         </SidebarInset>
