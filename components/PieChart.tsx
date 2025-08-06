@@ -6,14 +6,14 @@ import Image from "next/image";
 import React from "react";
 import { PieChart, Pie, Label } from "recharts";
 
-type PieChartCardProps = {
+type pieChartCardProps = {
   chartTitle?: string;
   chartInnerTitle?: string;
   chartData: { status: string; visitors: number; fill: string }[];
   chartConfig: ChartConfig;
 };
 
-const PieChartCard: React.FC<PieChartCardProps> = ({
+const PieChartCard: React.FC<pieChartCardProps> = ({
   chartTitle,
   chartInnerTitle,
   chartData,

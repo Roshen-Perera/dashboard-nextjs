@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "./ui/card";
 import { Bell } from "lucide-react";
 
-const Notice = () => {
+const notice = () => {
   return (
     <Card className="bg-[#f5fffa] w-[1028px] h-[65px] flex items-center p-4">
       <div className="flex items-center gap-4">
@@ -16,4 +16,4 @@ const Notice = () => {
   );
 };
 
-export default Notice;
+export default notice;
