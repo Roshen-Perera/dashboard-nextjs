@@ -5,10 +5,10 @@ import { Calendar } from "@/components/Calendar";
 import NextAppointment from "@/components/NextAppointment";
 import NextPatientDetails from "@/components/NextPatientDetail";
 import Notice from "@/components/Notices";
-import PatientCount from "@/components/patientCount";
-import PieChartCard from "@/components/pieChart";
-import Surgeries from "@/components/surgeries";
-import TodaySurgeries from "@/components/todaySurgeries";
+import PatientCount from "@/components/PatientCounts";
+import PieChartCard from "@/components/PieCharts";
+import Surgeries from "@/components/SurgeryComp";
+import TodaySurgeries from "@/components/TodaySurgeriesComp";
 
 import { ChartConfig } from "@/components/ui/chart";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
