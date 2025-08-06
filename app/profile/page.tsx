@@ -5,6 +5,7 @@ import BasicInfo from "@/components/BasicInfo";
 import ContactDetails from "@/components/ContactDetails";
 import LicenseInfo from "@/components/LiscenseInfo";
 import Profile from "@/components/Profile";
+import ProTimeline from "@/components/ProTimeline";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
 import React from "react";
@@ -48,6 +49,9 @@ const Home = () => {
               <BasicInfo />
               <LicenseInfo />
               <ContactDetails />
+            </div>
+            <div className="pt-4 flex flex-row gap-4">
+              <ProTimeline />
             </div>
           </div>
         </SidebarInset>
