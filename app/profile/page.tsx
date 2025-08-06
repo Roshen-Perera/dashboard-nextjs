@@ -42,7 +42,7 @@ const Home = () => {
               </div>
             </div>
             <Profile />
-            <div className="flex flex-row gap-4">
+            <div className="pt-4 flex flex-row gap-4">
               <BasicInfo />
             </div>
           </div>
