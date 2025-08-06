@@ -2,6 +2,10 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/BasicInfo";
+import ContactDetails from "@/components/ContactDetail";
+import LicenseInfo from "@/components/LicenseInfo";
+import Profile from "@/components/profile";
+import ProTimeline from "@/components/proTimeline";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
 import React from "react";
