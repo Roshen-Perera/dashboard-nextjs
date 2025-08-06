@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from './ui/card';
-import Appointments from './Appointment';
+import Appointment from './Appointment';
 const NextAppointment = () => {
   return (
     <div>
@@ -10,13 +10,13 @@ const NextAppointment = () => {
         </div>
         <div className="flex flex-col gap-6">
           {/* Appointment 1 */}
-          <Appointments
+          <Appointment
             name="John Doe"
             time="10:00 AM"
             type="Confirmed"
             image="/assets/bronson.png"
           />
-          <Appointments
+          <Appointment
             name="John Doe"
             time="10:00 AM"
             type="Confirmed"
