@@ -1,7 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
-import BasicInfo from "@/components/BasicInfo";
+import BasicInfo from "@/components/basicInfo";
 import ContactDetails from "@/components/ContactDetails";
 import LicenseInfo from "@/components/LiscenseInfo";
 import Profile from "@/components/Profile";
