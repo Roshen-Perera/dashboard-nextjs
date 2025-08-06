@@ -2,7 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/basicInfo";
-import ContactDetails from "@/components/ContactDetails";
+import ContactDetails from "@/components/contactDetails";
 import LicenseInfo from "@/components/LiscenseInfo";
 import Profile from "@/components/Profile";
 import ProTimeline from "@/components/ProTimeline";
