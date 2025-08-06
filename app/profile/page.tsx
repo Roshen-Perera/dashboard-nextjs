@@ -4,7 +4,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import BasicInfo from "@/components/basicInfo";
 import ContactDetails from "@/components/contactDetails";
 import LicenseInfo from "@/components/liscenseInfo";
-import Profile from "@/components/Profile";
+import Profile from "@/components/profile";
 import ProTimeline from "@/components/ProTimeline";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";

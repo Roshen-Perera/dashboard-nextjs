@@ -7,7 +7,7 @@ import NextPatientDetails from "@/components/nextPatientDetails";
 import Notice from "@/components/notice";
 import PatientCount from "@/components/patientCount";
 import PieChartCard from "@/components/pieChart";
-import PieChartCardPer from "@/components/PieChartPer";
+import PieChartCardPer from "@/components/pieChartPer";
 import Surgeries from "@/components/Surgeries";
 import TodaySurgeries from "@/components/TodaySurgeries";
 import { ChartConfig } from "@/components/ui/chart";
