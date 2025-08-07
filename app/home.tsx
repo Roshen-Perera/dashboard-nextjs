@@ -6,6 +6,7 @@ import NextAppointment from "@/components/NextAppointment";
 import NextPatientDetails from "@/components/NextPatientDetail";
 import Notice from "@/components/Notices";
 import PatientCount from "@/components/PatientCounts";
+import PieChartCardPer from "@/components/PieChartPer";
 import PieChartCard from "@/components/PieCharts";
 import Surgeries from "@/components/SurgeryComp";
 import TodaySurgeries from "@/components/TodaySurgeriesComp";
@@ -138,7 +139,7 @@ const Home = () => {
                 chartData={chartData2}
                 chartConfig={chartConfig2}
               />
-              <PieChartCard
+              <PieChartCardPer
                 chartTitle="Monthly Patients"
                 chartInnerTitle="All"
                 chartData={chartData3}
