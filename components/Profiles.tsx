@@ -18,12 +18,16 @@ const Profile = () => {
           />
           <HugeiconsIcon icon={Edit03Icon} />
         </div>
-        <div className="flex flex-row justify-around">
+        <div className="flex flex-row justify-between w-full">
           <div>
             <p className="text-3xl">Dr. Sarah Johnson</p>
             <p className="text-xl text-gray-500">Cardiology Specialist</p>
           </div>
-          
+          <div>
+            <a href="#" className="text-green-500 text-sm">
+              View All {">"}
+            </a>
+          </div>
         </div>
       </div>
     </Card>
