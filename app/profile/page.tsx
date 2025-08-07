@@ -17,7 +17,7 @@ const Home = () => {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset>
-          <div className="pl-4 pr-15 bg-[#f5fffa]">
+          <div className="pl-4 pr-8 bg-[#f5fffa]">
             <div className="flex flex-row justify-between items-center mt-4 mb-4">
               <input
                 type="text"
