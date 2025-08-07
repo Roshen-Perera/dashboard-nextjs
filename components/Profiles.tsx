@@ -19,7 +19,7 @@ const Profile = () => {
           <div className="absolute -bottom-2 -right-3 bg-white rounded-full p-2 shadow-lg">
             <HugeiconsIcon
               icon={Edit03Icon}
-              className="w-4 h-4 text-gray-600"
+              className="w-4 h-4 text-green-600"
             />
           </div>
         </div>
