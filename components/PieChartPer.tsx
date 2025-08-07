@@ -19,7 +19,7 @@ type PieChartCardProps = {
   chartConfig: ChartConfig;
 };
 
-const PieChartCard: React.FC<PieChartCardProps> = ({
+const PieChartCardPer: React.FC<PieChartCardProps> = ({
   chartTitle,
   chartInnerTitle,
   chartData,
@@ -117,4 +117,4 @@ const PieChartCard: React.FC<PieChartCardProps> = ({
   );
 };
 
-export default PieChartCard;
+export default PieChartCardPer;
