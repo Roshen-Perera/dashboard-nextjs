@@ -34,23 +34,24 @@ const Profile = () => {
             <div className="flex items-center gap-2">
               <HugeiconsIcon
                 icon={Edit03Icon}
-                className="w-4 h-4 text-blue-500"
+                className="w-4 h-4 text-green-500"
               />
+              <p className="text-sm text-green-500">Edit Profile</p>
             </div>
           </div>
 
           <div className="grid grid-cols-3 gap-6">
             <Card className="bg-[#f5fffa] rounded-lg p-4 border border-gray-200">
-              <p className="text-lg text-gray-500 mb-1">Experience</p>
-              <p className="text-xl font-semibold text-gray-900">15+ Years</p>
+              <p className="text-lg text-gray-500">Experience</p>
+              <p className="text-xl text-gray-900">15+ Years</p>
             </Card>
             <Card className="bg-[#f5fffa] rounded-lg p-4 border border-gray-200">
-              <p className="text-lg text-gray-500 mb-1">Patients</p>
-              <p className="text-xl font-semibold text-gray-900">10,000+</p>
+              <p className="text-lg text-gray-500">Patients</p>
+              <p className="text-xl text-gray-900">10,000+</p>
             </Card>
             <Card className="bg-[#f5fffa] rounded-lg p-4 border border-gray-200">
-              <p className="text-lg text-gray-500 mb-1">Rating</p>
-              <p className="text-xl font-semibold text-gray-900">4.9/5.0</p>
+              <p className="text-lg text-gray-500">Rating</p>
+              <p className="text-xl text-gray-900">4.9/5.0</p>
             </Card>
           </div>
         </div>
