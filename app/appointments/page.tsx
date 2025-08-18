@@ -2,6 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import CompletedCount from "@/components/CompletedCount";
+import PendingCount from "@/components/PendingCount";
 import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import TodayUpcomingCount from "@/components/TodayUpcomingCount";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
@@ -47,7 +48,7 @@ const Home = () => {
             <TodayAppointmentCount />
             <TodayUpcomingCount />
             <CompletedCount />
-            <TodayAppointmentCount />
+            <PendingCount />
           </div>
         </SidebarInset>
       </SidebarProvider>
