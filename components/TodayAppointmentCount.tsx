@@ -1,20 +1,24 @@
 import React from 'react'
-import { Card } from './ui/card';
-import { Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 const TodayAppointmentCount = () => {
   return (
-    <Card className="bg-[#f5fffa] w-[250px] h-[100px] p-5 rounded-md">
+    <div className="bg-[#f5fffa] w-[250px] h-[100px] p-4 border-1 rounded-md">
       <div className="flex flex-row gap-4 items-center">
         <div>
-          <Calendar />
+          <Image
+            src={"/assets/icons/todayCalendar.png"}
+            width={20}
+            height={20}
+            alt="Notification"
+          />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <p className="text-lg text-gray-500">Today</p>
           <p className="text-xl text-gray-900">12</p>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 
