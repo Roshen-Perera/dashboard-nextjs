@@ -1,6 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
+import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Image from "next/image";
 import React from "react";
@@ -39,6 +40,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-between p-5">
+            <TodayAppointmentCount />
+            <TodayAppointmentCount />
+            <TodayAppointmentCount />
+            <TodayAppointmentCount />
           </div>
         </SidebarInset>
       </SidebarProvider>
