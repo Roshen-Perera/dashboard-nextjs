@@ -8,14 +8,14 @@ const TodayUpcomingCount = () => {
       <div className="flex flex-row gap-4 items-center">
         <div>
           <Image
-            src={"/assets/icons/todayCalendar.png"}
+            src={"/assets/icons/upcomingCalendar.png"}
             width={20}
             height={20}
             alt="Notification"
           />
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-lg text-gray-500">Today</p>
+          <p className="text-lg text-gray-500">Upcoming</p>
           <p className="text-xl text-gray-900">12</p>
         </div>
       </div>
