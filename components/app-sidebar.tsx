@@ -35,7 +35,7 @@ const data = {
         },
         {
           title: "Appointments",
-          url: "#",
+          url: "/appointments",
           isActive: false,
           icon: "/assets/icons/calendar.png",
         },
