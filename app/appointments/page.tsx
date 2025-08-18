@@ -2,6 +2,7 @@
 
 import { AppSidebar } from "@/components/app-sidebar";
 import CompletedCount from "@/components/CompletedCount";
+import FilterHeader from "@/components/FilterHeader";
 import PendingCount from "@/components/PendingCount";
 import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import TodayUpcomingCount from "@/components/TodayUpcomingCount";
@@ -49,6 +50,9 @@ const Home = () => {
             <TodayUpcomingCount />
             <CompletedCount />
             <PendingCount />
+          </div>
+          <div className="pl-5 pr-5">
+            <FilterHeader />
           </div>
         </SidebarInset>
       </SidebarProvider>
