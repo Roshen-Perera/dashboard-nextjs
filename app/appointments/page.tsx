@@ -1,6 +1,7 @@
 "use client";
 
 import { AppSidebar } from "@/components/app-sidebar";
+import CompletedCount from "@/components/CompletedCount";
 import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import TodayUpcomingCount from "@/components/TodayUpcomingCount";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
@@ -45,7 +46,7 @@ const Home = () => {
           <div className="flex justify-between p-5">
             <TodayAppointmentCount />
             <TodayUpcomingCount />
-            <TodayAppointmentCount />
+            <CompletedCount />
             <TodayAppointmentCount />
           </div>
         </SidebarInset>
