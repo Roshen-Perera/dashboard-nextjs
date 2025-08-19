@@ -7,14 +7,14 @@ const ApprovedAppointments = () => {
     ];
   return (
     <>
-      <table className="w-full border border-gray-300">
+      <table className="w-full border-gray-300">
         <thead>
           <tr className="bg-gray-100">
-            <th className="p-2 border">Patient</th>
-            <th className="p-2 border">Date & Time</th>
-            <th className="p-2 border">Type</th>
-            <th className="p-2 border">Status</th>
-            <th className="p-2 border"></th>
+            <th className="p-2 border font-semibold">Patient</th>
+            <th className="p-2 border font-semibold">Date & Time</th>
+            <th className="p-2 border font-semibold">Type</th>
+            <th className="p-2 border font-semibold">Status</th>
+            <th className="p-2 border font-semibold"></th>
           </tr>
         </thead>
         <tbody>
