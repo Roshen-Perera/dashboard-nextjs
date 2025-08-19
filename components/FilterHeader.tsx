@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Download } from "lucide-react";
 import ApprovedAppointments from "./ApprovedAppointments";
+import NotApprovedAppointments from "./NotApprovedAppointments";
 
 const FilterHeader = ({
   leftButtonText = "Approved",
@@ -10,13 +11,6 @@ const FilterHeader = ({
   defaultActive = "Approved",
 }) => {
   const [activeStatus, setActiveStatus] = useState(defaultActive);
-  // Example data
-  
-
-  const notApprovedData = [
-    { id: 3, name: "Mark Lee", status: "Not Approved" },
-    { id: 4, name: "Sara Kim", status: "Not Approved" },
-  ];
 
   const handleExport = () => {
     console.log("Exporting data...");
@@ -78,24 +72,7 @@ const FilterHeader = ({
 
         {/* Show Not Approved Table */}
         {activeStatus === "Not Approved" && (
-          <table className="w-full border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="p-2 border">ID</th>
-                <th className="p-2 border">Name</th>
-                <th className="p-2 border">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {notApprovedData.map((row) => (
-                <tr key={row.id}>
-                  <td className="p-2 border">{row.id}</td>
-                  <td className="p-2 border">{row.name}</td>
-                  <td className="p-2 border">{row.status}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <NotApprovedAppointments/>
         )}
       </div>
     </>
