@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Calendar, MapPin, User } from "lucide-react";
 import React, { useState } from "react";
+import { Textarea } from "./ui/textarea";
 
 const ApprovedAppointments = () => {
   const [appointments] = useState([
@@ -90,7 +91,7 @@ const ApprovedAppointments = () => {
                       <User className="w-6 h-6 text-gray-600" />
                     </div>
                     <div>
-                      <div className="font-medium text-gray-900">
+                      <div className="text-base font-normal">
                         {appointment.patientName}
                       </div>
                       <div className="text-sm text-gray-500">P0001</div>
