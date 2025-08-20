@@ -97,20 +97,20 @@ const NotApprovedAppointments = () => {
                         <User className="w-6 h-6 text-gray-600" />
                       </div>
                       <div>
-                        <div className="font-medium text-gray-900">
+                        <div className="text-base font-normal">
                           {appointment.patientName}
                         </div>
-                        <div className="text-sm text-gray-500">P0001</div>
+                        <div className="text-sm font-normal text-gray-500">
+                          {appointment.patientId}
+                        </div>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-1 text-sm text-gray-600">
-                      <Calendar className="w-4 h-4" />
+                    <div className="flex items-center space-x-1 text-base font-normal">
                       <span>
                         {appointment.date}, {appointment.time}
                       </span>
                     </div>
-                    <div className="flex items-center space-x-1 text-sm text-gray-600">
-                      <MapPin className="w-4 h-4" />
+                    <div className="flex items-center space-x-1 text-base font-normal">
                       <span>{appointment.appointmentType}</span>
                     </div>
                     <div className="ml-3">
@@ -118,7 +118,7 @@ const NotApprovedAppointments = () => {
                         {appointment.status}
                       </span>
                     </div>
-                    <div className="flex items-center space-x-1 text-sm text-gray-600 cursor-pointer">
+                    <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
                       <Calendar className="w-4 h-4" />
                       <span>Reschedule</span>
                     </div>
@@ -151,9 +151,15 @@ const NotApprovedAppointments = () => {
                         >
                           Mark as Checked
                         </label>
+                        <label
+                          htmlFor="markChecked"
+                          className="text-sm text-gray-700"
+                        >
+                          Mark as Checked
+                        </label>
                         {/* <button className="px-4 py-2 bg-teal-500 text-white text-sm font-medium rounded-md hover:bg-teal-600 transition-colors">
-                          🏥 Admit Patient
-                        </button> */}
+                                    🏥 Admit Patient
+                                  </button> */}
                       </div>
 
                       <div className="flex items-center">
