@@ -105,7 +105,6 @@ const ApprovedAppointments = () => {
                     </span>
                   </div>
                   <div className="flex items-center space-x-1 text-base font-normal">
-                    <MapPin className="w-4 h-4" />
                     <span>{appointment.appointmentType}</span>
                   </div>
                   <div className="ml-3">
