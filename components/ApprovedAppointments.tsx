@@ -69,16 +69,16 @@ const ApprovedAppointments = () => {
   return (
     <>
       <div className="border-2 rounded-lg">
-        <div className="pt-4 pb-4 pl-5 grid grid-cols-5 gap-4 bg-gray-200 mb-4 text-base rounded-lg">
+        <div className="pt-4 pb-4 pl-5 pr-7 grid grid-cols-5 gap-4 bg-gray-200 mb-4 text-base rounded-t-sm">
           <div>Patient</div>
           <div>Date & Time</div>
           <div>Type</div>
           <div>Status</div>
         </div>
         {appointments.map((appointment) => (
-          <Accordion key={appointment.id} type="single" collapsible>
+          <Accordion key={appointment.id} type="single" collapsible className="pr-5">
             <AccordionItem value="item-1">
-              <AccordionTrigger >
+              <AccordionTrigger>
                 <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
                   <div className="flex items-center space-x-2">
                     <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
