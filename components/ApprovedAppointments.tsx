@@ -116,7 +116,7 @@ const ApprovedAppointments = () => {
               <AccordionContent>
                 Yes. It adheres to the WAI-ARIA design pattern.
               </AccordionContent>
-              <hr className=" border-gray-300" />
+              <hr className=" border-gray-500" />
             </AccordionItem>
           </Accordion>
         ))}
