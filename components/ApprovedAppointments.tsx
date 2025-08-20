@@ -94,7 +94,9 @@ const ApprovedAppointments = () => {
                       <div className="text-base font-normal">
                         {appointment.patientName}
                       </div>
-                      <div className="text-sm text-gray-500">P0001</div>
+                      <div className="text-sm font-normal text-gray-500">
+                        {appointment.patientId}
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-1 text-sm text-gray-600">
