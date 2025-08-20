@@ -112,7 +112,7 @@ const ApprovedAppointments = () => {
                       {appointment.status}
                     </span>
                   </div>
-                  <div className="flex items-center space-x-1 text-sm text-gray-600 cursor-pointer">
+                  <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
                     <Calendar className="w-4 h-4" />
                     <span>Reschedule</span>
                   </div>
