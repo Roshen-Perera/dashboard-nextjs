@@ -68,7 +68,7 @@ const ApprovedAppointments = () => {
 
   return (
     <>
-      <div className="border-2 rounded-lg">
+      <div className="border-1 rounded-lg">
         <div className="pt-4 pb-4 pl-5 pr-7 grid grid-cols-5 gap-4 bg-gray-200 mb-4 text-base rounded-t-sm">
           <div>Patient</div>
           <div>Date & Time</div>
