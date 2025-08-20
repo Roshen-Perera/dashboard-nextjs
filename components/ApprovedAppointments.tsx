@@ -69,14 +69,14 @@ const ApprovedAppointments = () => {
   return (
     <>
       <div className="border-1 rounded-lg">
-        <div className="pt-4 pb-4 pl-5 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
+        <div className="pt-4 pb-4 pl-7 pr-7 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
           <div>Patient</div>
           <div>Date & Time</div>
           <div>Type</div>
           <div>Status</div>
         </div>
         {appointments.map((appointment) => (
-          <Accordion key={appointment.id} type="single" collapsible>
+          <Accordion key={appointment.id} type="single" collapsible className="pr-5 pl-5">
             <AccordionItem value="item-1">
               <AccordionTrigger>
                 <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
@@ -116,7 +116,7 @@ const ApprovedAppointments = () => {
               <AccordionContent>
                 Yes. It adheres to the WAI-ARIA design pattern.
               </AccordionContent>
-              <hr className=" border-gray-500" />
+              <hr className=" border-gray-400" />
             </AccordionItem>
           </Accordion>
         ))}
