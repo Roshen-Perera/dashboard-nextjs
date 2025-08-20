@@ -76,7 +76,12 @@ const ApprovedAppointments = () => {
           <div>Status</div>
         </div>
         {appointments.map((appointment) => (
-          <Accordion key={appointment.id} type="single" collapsible className="pr-5 pl-5">
+          <Accordion
+            key={appointment.id}
+            type="single"
+            collapsible
+            className="pr-5 pl-5"
+          >
             <AccordionItem value="item-1">
               <AccordionTrigger>
                 <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
@@ -114,7 +119,59 @@ const ApprovedAppointments = () => {
               </AccordionTrigger>
 
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                <div className="border-1 rounded-md p-4">
+                  <p className="text-base mb-4">
+                    Appointment Type: {appointment.appointmentType}
+                  </p>
+                  <div className="flex flex-row">
+                    <div>
+                      <p className="text-base whitespace-nowrap pr-7">
+                        Reason for visit:
+                      </p>
+                    </div>
+                    <Textarea className="resize-none" />
+                  </div>
+                  <div className="flex items-center justify-between mt-5">
+                    <div className="flex items-center space-x-2">
+                      <input
+                        type="checkbox"
+                        id="markChecked"
+                        className="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                      />
+                      <label
+                        htmlFor="markChecked"
+                        className="text-sm text-gray-700"
+                      >
+                        Mark as Checked
+                      </label>
+                      {/* <button className="px-4 py-2 bg-teal-500 text-white text-sm font-medium rounded-md hover:bg-teal-600 transition-colors">
+                          🏥 Admit Patient
+                        </button> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <a
+                        href="#"
+                        className="text-green-600 text-sm hover:text-green-700 transition-colors flex items-center"
+                      >
+                        View Medical Record
+                        <svg
+                          className="ml-1 w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </AccordionContent>
               <hr className=" border-gray-400" />
             </AccordionItem>
