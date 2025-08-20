@@ -25,7 +25,7 @@ const ApprovedAppointments = () => {
       id: 2,
       patientName: "John Doe",
       patientId: "#710103",
-      date: "Tomorrow",
+      date: "Today",
       time: "10:30 AM",
       visitType: "Virtual",
       status: "Upcoming",
@@ -36,7 +36,7 @@ const ApprovedAppointments = () => {
       id: 3,
       patientName: "Jane Smith",
       patientId: "#710104",
-      date: "Aug 20, 2025",
+      date: "Today",
       time: "4:00 PM",
       visitType: "In-Person",
       status: "Completed",
@@ -47,7 +47,7 @@ const ApprovedAppointments = () => {
       id: 4,
       patientName: "Michael Johnson",
       patientId: "#710105",
-      date: "Aug 22, 2025",
+      date: "Today",
       time: "9:00 AM",
       visitType: "Virtual",
       status: "Cancelled",
@@ -58,7 +58,7 @@ const ApprovedAppointments = () => {
       id: 5,
       patientName: "Emily Davis",
       patientId: "#710106",
-      date: "Aug 25, 2025",
+      date: "Today",
       time: "11:15 AM",
       visitType: "In-Person",
       status: "Upcoming",
@@ -100,7 +100,6 @@ const ApprovedAppointments = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-1 text-base font-normal">
-                    <Calendar className="w-4 h-4" />
                     <span>
                       {appointment.date}, {appointment.time}
                     </span>
