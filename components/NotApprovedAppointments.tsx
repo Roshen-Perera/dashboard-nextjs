@@ -4,9 +4,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Calendar, MapPin, User } from "lucide-react";
+import { Bed, Calendar, MapPin, User } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { BedIcon } from "@hugeicons/core-free-icons";
 
 const NotApprovedAppointments = () => {
   const [appointments] = useState([
@@ -151,15 +153,13 @@ const NotApprovedAppointments = () => {
                         >
                           Mark as Checked
                         </label>
-                        <label
-                          htmlFor="markChecked"
-                          className="text-sm text-gray-700"
+                        <a
+                          className="ml-3 flex gap-2 text-sm text-green-600"
+                          href="#"
                         >
-                          Mark as Checked
-                        </label>
-                        {/* <button className="px-4 py-2 bg-teal-500 text-white text-sm font-medium rounded-md hover:bg-teal-600 transition-colors">
-                                    🏥 Admit Patient
-                                  </button> */}
+                          <Bed size={18} />
+                          Admit Patient
+                        </a>
                       </div>
 
                       <div className="flex items-center">
