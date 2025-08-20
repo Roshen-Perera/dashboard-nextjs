@@ -4,11 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bed, Calendar, MapPin, User } from "lucide-react";
+import { Bed, Calendar, User } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { BedIcon } from "@hugeicons/core-free-icons";
 
 const NotApprovedAppointments = () => {
   const [appointments] = useState([
