@@ -125,7 +125,15 @@ const NotApprovedAppointments = () => {
                 </AccordionTrigger>
 
                 <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  <div className="border-1 rounded-md p-4">
+                    <p className="text-base">
+                      Appointment Type: {appointment.appointmentType}
+                    </p>
+                    <div className="flex flex-row">
+                      <p className="text-base">Reason for visit: </p>
+                      
+                    </div>
+                  </div>
                 </AccordionContent>
                 <hr className=" border-gray-400" />
               </AccordionItem>
