@@ -76,11 +76,11 @@ const NotApprovedAppointments = () => {
     <>
       <>
         <div className="border-1 rounded-lg">
-          <div className="pt-4 pb-4 pl-7 pr-7 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
-            <div>Patient</div>
-            <div>Date & Time</div>
+          <div className="pt-4 pb-4 pl-6 pr-7 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
+            <div className="ml-4">Patient</div>
+            <div className="ml-2">Date & Time</div>
             <div>Type</div>
-            <div>Status</div>
+            <div className="ml-2">Status</div>
           </div>
           {appointments.map((appointment) => (
             <Accordion
