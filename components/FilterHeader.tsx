@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import ApprovedAppointments from "./ApprovedAppointments";
 import NotApprovedAppointments from "./NotApprovedAppointments";
 import { DatePicker } from "./DatePicker";
+import StatusMenu from "./StatusMenu";
 
 const FilterHeader = ({
   leftButtonText = "Approved",
@@ -56,7 +57,7 @@ const FilterHeader = ({
         {/* Right side - Controls */}
         <div className="flex items-center gap-3">
           {/* Status Dropdown */}
-          
+          <StatusMenu/>
           <DatePicker/>
           <button
             onClick={handleExport}
