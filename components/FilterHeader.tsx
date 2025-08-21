@@ -55,7 +55,7 @@ const FilterHeader = ({
         {/* Right side - Controls */}
         <div className="flex items-center gap-3">
           {/* Status Dropdown */}
-          <div className="relative"></div>
+          
           <button
             onClick={handleExport}
             className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1 transition-colors"
