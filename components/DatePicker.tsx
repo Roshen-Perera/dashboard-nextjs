@@ -42,15 +42,12 @@ export function DatePicker() {
 
   return (
     <div className="flex flex-col gap-3">
-      <Label htmlFor="date" className="px-1">
-        Subscription Date
-      </Label>
       <div className="relative flex gap-2">
         <Input
           id="date"
           value={value}
           placeholder="June 01, 2025"
-          className="bg-background pr-10"
+          className="bg-[#f5fffa pr-10"
           onChange={(e) => {
             const date = new Date(e.target.value);
             setValue(e.target.value);
