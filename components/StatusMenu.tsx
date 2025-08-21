@@ -1,3 +1,5 @@
+"use-client"
+
 import React from 'react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Button } from './ui/button';
@@ -7,7 +9,9 @@ const StatusMenu = () => {
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger>
-          <Button variant="outline">Open</Button>
+          <Button variant="outline" className="bg-[#f5fffa] font-normal">
+            All Status
+          </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
