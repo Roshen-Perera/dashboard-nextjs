@@ -9,14 +9,14 @@ const StatusMenu = () => {
   return (
     <div>
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex bg-[#f5fffa] font-normal rounded-sm border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100">
+        <DropdownMenuTrigger className="flex bg-[#f5fffa] font-normal rounded-sm border-900-green border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100">
           All Status
           <HugeiconsIcon icon={ArrowDown01Icon} />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Billing</DropdownMenuItem>
-          <DropdownMenuItem>Team</DropdownMenuItem>
+          <DropdownMenuItem>Upcoming</DropdownMenuItem>
+          <DropdownMenuItem>Completed</DropdownMenuItem>
+          <DropdownMenuItem>Cancelled</DropdownMenuItem>
           <DropdownMenuItem>Subscription</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
