@@ -46,7 +46,7 @@ export function DatePicker() {
           id="date"
           value={value}
           placeholder="June 01, 2025"
-          className="bg-[#f5fffa pr-10 border-1"
+          className="bg-[#f5fffa p-5 border-1"
           onChange={(e) => {
             const date = new Date(e.target.value);
             setValue(e.target.value);
