@@ -1,21 +1,19 @@
 "use-client"
 
 import React from 'react'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
-import { Button } from './ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
+import { ArrowDown01Icon } from '@hugeicons/core-free-icons';
+import { HugeiconsIcon } from '@hugeicons/react';
 
 const StatusMenu = () => {
   return (
     <div>
       <DropdownMenu>
-        <DropdownMenuTrigger>
-          <Button variant="outline" className="bg-[#f5fffa] font-normal rounded-sm p-5">
-            All Status
-          </Button>
+        <DropdownMenuTrigger className="flex bg-[#f5fffa] font-normal rounded-sm border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100">
+          All Status
+          <HugeiconsIcon icon={ArrowDown01Icon} />
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
-          <DropdownMenuSeparator />
           <DropdownMenuItem>Profile</DropdownMenuItem>
           <DropdownMenuItem>Billing</DropdownMenuItem>
           <DropdownMenuItem>Team</DropdownMenuItem>
