@@ -9,7 +9,7 @@ const StatusMenu = () => {
     <div>
       <DropdownMenu>
         <DropdownMenuTrigger>
-          <Button variant="outline" className="bg-[#f5fffa] font-normal">
+          <Button variant="outline" className="bg-[#f5fffa] font-normal rounded-sm p-5 text-base">
             All Status
           </Button>
         </DropdownMenuTrigger>
