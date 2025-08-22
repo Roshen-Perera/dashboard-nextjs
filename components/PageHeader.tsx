@@ -3,8 +3,7 @@ import Image from "next/image";
 
 const PageHeader = () => {
   return (
-    <div className="pl-4 pr-8">
-      <div className="flex flex-row justify-between items-center mt-4 mb-4">
+    <div className="flex flex-row justify-between items-center mt-4 mb-4">
         <input
           type="text"
           placeholder="Search..."
@@ -31,7 +30,6 @@ const PageHeader = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
