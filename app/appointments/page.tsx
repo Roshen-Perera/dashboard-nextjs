@@ -8,7 +8,6 @@ import PendingCount from "@/components/PendingCount";
 import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import TodayUpcomingCount from "@/components/TodayUpcomingCount";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import Image from "next/image";
 import React from "react";
 
 const Home = () => {
