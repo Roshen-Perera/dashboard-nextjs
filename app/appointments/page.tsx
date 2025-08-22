@@ -16,8 +16,11 @@ const Home = () => {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset className="bg-[#f5fffa]">
-          <PageHeader/>
-          <div className="flex justify-between p-5">
+          <div className="pl-4 pr-8">
+            <PageHeader />
+          </div>
+
+          <div className="flex justify-between p-4">
             <TodayAppointmentCount />
             <TodayUpcomingCount />
             <CompletedCount />
