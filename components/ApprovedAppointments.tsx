@@ -33,7 +33,7 @@ const ApprovedAppointments = () => {
       status: "Upcoming",
       appointmentType: "Follow-up",
       reasonForVisit: "Review of medication adjustments",
-      image: "/assets/appointment1.png",
+      image: "/assets/appointment2.png",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const ApprovedAppointments = () => {
       status: "Completed",
       appointmentType: "Consultation",
       reasonForVisit: "Discussion of test results and next steps",
-      image: "/assets/icons/bell.png",
+      image: "/assets/appointment3.png",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const ApprovedAppointments = () => {
       status: "Cancelled",
       appointmentType: "Therapy Session",
       reasonForVisit: "Stress management and counseling",
-      image: "/assets/icons/bell.png",
+      image: "/assets/appointment4.png",
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ const ApprovedAppointments = () => {
       status: "Upcoming",
       appointmentType: "Dental Cleaning",
       reasonForVisit: "Routine teeth cleaning and check-up",
-      image: "/assets/icons/bell.png",
+      image: "/assets/appointment5.png",
     },
   ]);
 
