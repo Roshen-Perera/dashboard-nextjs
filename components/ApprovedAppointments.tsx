@@ -93,9 +93,12 @@ const ApprovedAppointments = () => {
               <AccordionTrigger>
                 <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
                   <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                      <Image src={appointment.image} alt="appo"  width={20} height={20}/>
-                    </div>
+                    <Image
+                      src={appointment.image}
+                      alt="appo"
+                      width={40}
+                      height={40}
+                    />
                     <div>
                       <div className="text-base font-normal">
                         {appointment.patientName}
