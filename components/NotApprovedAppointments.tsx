@@ -7,70 +7,71 @@ import {
 import { Bed, Calendar, User } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
+import Image from "next/image";
 
 const NotApprovedAppointments = () => {
   const [appointments] = useState([
-      {
-        id: 1,
-        patientName: "Lorem Ipsum",
-        patientId: "#710102",
-        date: "Today",
-        time: "2:00 PM",
-        visitType: "In-Person",
-        status: "Upcoming",
-        appointmentType: "Routine Check-up",
-        reasonForVisit: "Annual health examination and blood work review",
-        image: "/assets/appointment1.png",
-      },
-      {
-        id: 2,
-        patientName: "John Doe",
-        patientId: "#710103",
-        date: "Today",
-        time: "10:30 AM",
-        visitType: "Virtual",
-        status: "Upcoming",
-        appointmentType: "Follow-up",
-        reasonForVisit: "Review of medication adjustments",
-        image: "/assets/appointment2.png",
-      },
-      {
-        id: 3,
-        patientName: "Jane Smith",
-        patientId: "#710104",
-        date: "Today",
-        time: "4:00 PM",
-        visitType: "In-Person",
-        status: "Completed",
-        appointmentType: "Consultation",
-        reasonForVisit: "Discussion of test results and next steps",
-        image: "/assets/appointment3.png",
-      },
-      {
-        id: 4,
-        patientName: "Michael Johnson",
-        patientId: "#710105",
-        date: "Today",
-        time: "9:00 AM",
-        visitType: "Virtual",
-        status: "Cancelled",
-        appointmentType: "Therapy Session",
-        reasonForVisit: "Stress management and counseling",
-        image: "/assets/appointment4.png",
-      },
-      {
-        id: 5,
-        patientName: "Emily Davis",
-        patientId: "#710106",
-        date: "Today",
-        time: "11:15 AM",
-        visitType: "In-Person",
-        status: "Upcoming",
-        appointmentType: "Dental Cleaning",
-        reasonForVisit: "Routine teeth cleaning and check-up",
-        image: "/assets/appointment5.png",
-      },
-    ]);
+    {
+      id: 1,
+      patientName: "Lorem Ipsum",
+      patientId: "#710102",
+      date: "Today",
+      time: "2:00 PM",
+      visitType: "In-Person",
+      status: "Upcoming",
+      appointmentType: "Routine Check-up",
+      reasonForVisit: "Annual health examination and blood work review",
+      image: "/assets/appointment1.png",
+    },
+    {
+      id: 2,
+      patientName: "John Doe",
+      patientId: "#710103",
+      date: "Today",
+      time: "10:30 AM",
+      visitType: "Virtual",
+      status: "Upcoming",
+      appointmentType: "Follow-up",
+      reasonForVisit: "Review of medication adjustments",
+      image: "/assets/appointment2.png",
+    },
+    {
+      id: 3,
+      patientName: "Jane Smith",
+      patientId: "#710104",
+      date: "Today",
+      time: "4:00 PM",
+      visitType: "In-Person",
+      status: "Completed",
+      appointmentType: "Consultation",
+      reasonForVisit: "Discussion of test results and next steps",
+      image: "/assets/appointment3.png",
+    },
+    {
+      id: 4,
+      patientName: "Michael Johnson",
+      patientId: "#710105",
+      date: "Today",
+      time: "9:00 AM",
+      visitType: "Virtual",
+      status: "Cancelled",
+      appointmentType: "Therapy Session",
+      reasonForVisit: "Stress management and counseling",
+      image: "/assets/appointment4.png",
+    },
+    {
+      id: 5,
+      patientName: "Emily Davis",
+      patientId: "#710106",
+      date: "Today",
+      time: "11:15 AM",
+      visitType: "In-Person",
+      status: "Upcoming",
+      appointmentType: "Dental Cleaning",
+      reasonForVisit: "Routine teeth cleaning and check-up",
+      image: "/assets/appointment5.png",
+    },
+  ]);
 
   return (
     <>
@@ -93,9 +94,12 @@ const NotApprovedAppointments = () => {
                 <AccordionTrigger>
                   <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
                     <div className="flex items-center space-x-2">
-                      <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                        <User className="w-6 h-6 text-gray-600" />
-                      </div>
+                      <Image
+                        src={appointment.image}
+                        alt="appo"
+                        width={40}
+                        height={40}
+                      />
                       <div>
                         <div className="text-base font-normal">
                           {appointment.patientName}
