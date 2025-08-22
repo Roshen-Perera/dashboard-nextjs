@@ -10,7 +10,6 @@ import Profile from "@/components/Profiles";
 import ProTimeline from "@/components/ProTimelines";
 import SpecialtyAreas from "@/components/SpecialtyAreas";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import Image from "next/image";
 import React from "react";
 
 const Home = () => {
