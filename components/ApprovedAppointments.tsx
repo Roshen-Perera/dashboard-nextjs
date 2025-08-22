@@ -4,9 +4,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bed, Calendar,  User } from "lucide-react";
+import { Bed, Calendar } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
+import Image from "next/image";
 
 const ApprovedAppointments = () => {
   const [appointments] = useState([
@@ -20,6 +21,7 @@ const ApprovedAppointments = () => {
       status: "Upcoming",
       appointmentType: "Routine Check-up",
       reasonForVisit: "Annual health examination and blood work review",
+      image: "/assets/appointment1.png",
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ const ApprovedAppointments = () => {
       status: "Upcoming",
       appointmentType: "Follow-up",
       reasonForVisit: "Review of medication adjustments",
+      image: "/assets/appointment1.png",
     },
     {
       id: 3,
@@ -42,6 +45,7 @@ const ApprovedAppointments = () => {
       status: "Completed",
       appointmentType: "Consultation",
       reasonForVisit: "Discussion of test results and next steps",
+      image: "/assets/icons/bell.png",
     },
     {
       id: 4,
@@ -53,6 +57,7 @@ const ApprovedAppointments = () => {
       status: "Cancelled",
       appointmentType: "Therapy Session",
       reasonForVisit: "Stress management and counseling",
+      image: "/assets/icons/bell.png",
     },
     {
       id: 5,
@@ -64,6 +69,7 @@ const ApprovedAppointments = () => {
       status: "Upcoming",
       appointmentType: "Dental Cleaning",
       reasonForVisit: "Routine teeth cleaning and check-up",
+      image: "/assets/icons/bell.png",
     },
   ]);
 
@@ -88,7 +94,7 @@ const ApprovedAppointments = () => {
                 <div className="grid grid-cols-5 items-center flex-1 gap-4 pl-5">
                   <div className="flex items-center space-x-2">
                     <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-gray-600" />
+                      <Image src={appointment.image} alt="appo"  width={20} height={20}/>
                     </div>
                     <div>
                       <div className="text-base font-normal">
