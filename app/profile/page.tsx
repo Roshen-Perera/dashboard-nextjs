@@ -5,6 +5,7 @@ import BasicInfo from "@/components/BasicInfo";
 import ConSchedule from "@/components/ConSchedule";
 import ContactDetails from "@/components/ContactDetail";
 import LicenseInfo from "@/components/LicenseInfo";
+import PageHeader from "@/components/PageHeader";
 import Profile from "@/components/Profiles";
 import ProTimeline from "@/components/ProTimelines";
 import SpecialtyAreas from "@/components/SpecialtyAreas";
@@ -19,7 +20,7 @@ const Home = () => {
         <AppSidebar />
         <SidebarInset>
           <div className="pl-4 pr-8 bg-[#f5fffa]">
-            
+            <PageHeader />
             <Profile />
             <div className="pt-4 flex flex-row gap-4">
               <BasicInfo />
