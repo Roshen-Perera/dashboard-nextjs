@@ -14,7 +14,6 @@ import TodaySurgeries from "@/components/TodaySurgeriesComp";
 
 import { ChartConfig } from "@/components/ui/chart";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import Image from "next/image";
 import React from "react";
 
 const Home = () => {
@@ -95,7 +94,6 @@ const Home = () => {
         <SidebarInset>
           <div className="pl-4 pr-8 bg-[#f5fffa]">
             <PageHeader/>
-
             <Notice />
             <div className="flex flex-row gap-4 flex-wrap mt-4">
               <div className="flex flex-col justify-between">
