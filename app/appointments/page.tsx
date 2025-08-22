@@ -3,6 +3,7 @@
 import { AppSidebar } from "@/components/app-sidebar";
 import CompletedCount from "@/components/CompletedCount";
 import FilterHeader from "@/components/FilterHeader";
+import PageHeader from "@/components/PageHeader";
 import PendingCount from "@/components/PendingCount";
 import TodayAppointmentCount from "@/components/TodayAppointmentCount";
 import TodayUpcomingCount from "@/components/TodayUpcomingCount";
@@ -16,7 +17,7 @@ const Home = () => {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset className="bg-[#f5fffa]">
-          
+          <PageHeader/>a
           <div className="flex justify-between p-5">
             <TodayAppointmentCount />
             <TodayUpcomingCount />
