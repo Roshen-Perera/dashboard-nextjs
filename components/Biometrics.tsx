@@ -5,9 +5,9 @@ import React from "react";
 const Biometrics = () => {
   return (
     <div>
-      <div className="w-[520px] h-[252px] border-1 rounded-sm p-2">
+      <div className="w-[520px] h-[252px] border-1 rounded-sm p-1">
         <div className="flex flex-row justify-between p-2">
-          <div className="text-base">Biometrics</div>
+          <div className="text-xl">Biometrics</div>
           <div className="flex items-center gap-2">
             <HugeiconsIcon
               icon={Edit03Icon}
@@ -16,22 +16,22 @@ const Biometrics = () => {
             <p className="text-sm text-green-500">Edit</p>
           </div>
         </div>
-        <div className="mt-2">
+        <div>
           <div className="flex flex-row justify-between p-2">
-            <div className="text-sm text-gray-500">View</div>
-            <div className="text-sm">145 lbs (65.8 kg)</div>
+            <div className="text-base text-gray-500">View</div>
+            <div className="text-base">145 lbs (65.8 kg)</div>
           </div>
           <div className="flex flex-row justify-between p-2">
-            <div className="text-sm text-gray-500">Height</div>
-            <div className="text-sm">5’7” (170 cm)</div>
+            <div className="text-base text-gray-500">Height</div>
+            <div className="text-base">5’7” (170 cm)</div>
           </div>
           <div className="flex flex-row justify-between p-2">
-            <div className="text-sm text-gray-500">BMI (calc.)</div>
-            <div className="text-sm">22.7</div>
+            <div className="text-base text-gray-500">BMI (calc.)</div>
+            <div className="text-base">22.7</div>
           </div>
           <div className="flex flex-row justify-between p-2">
-            <div className="text-sm text-gray-500">MUAC</div>
-            <div className="text-sm">12.5 cm</div>
+            <div className="text-base text-gray-500">MUAC</div>
+            <div className="text-base">12.5 cm</div>
           </div>
         </div>
       </div>
