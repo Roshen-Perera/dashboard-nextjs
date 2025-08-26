@@ -3,7 +3,8 @@ import CurrentVitals from './CurrentVitals'
 
 const MedicalHistory = () => {
   return (
-    <div>
+    <div className='flex flex-row justify-between'>
+      <CurrentVitals/>
       <CurrentVitals/>
     </div>
   )
