@@ -7,9 +7,9 @@ const SurgerySchedule = () => {
       <div className="w-[1060px] h-[330px] border-1 rounded-sm p-2">
         <div className="flex flex-row justify-between p-2">
           <div className="text-xl">Surgeries</div>
-          <div className="flex items-center gap-2">
-            <Plus/>
-            <p className="text-base text-green-500">Schedule Surgery</p>
+          <div className="flex items-center text-green-500 gap-2">
+            <p className="text-base">Schedule Surgery</p>
+            <Plus />
           </div>
         </div>
       </div>
