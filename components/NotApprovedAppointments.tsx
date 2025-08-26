@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bed, Calendar } from "lucide-react";
+import { Bed, Calendar, SquareCheck } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
 import Image from "next/image";
@@ -124,8 +124,8 @@ const NotApprovedAppointments = () => {
                     </div>
                     <div className="-ml-10 flex flex-row gap-2">
                       <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
-                        <Calendar className="w-4 h-4" />
-                        <span>Reschedule</span>
+                        <SquareCheck />
+                        <span>Approve</span>
                       </div>
                       <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
                         <Calendar className="w-4 h-4" />
