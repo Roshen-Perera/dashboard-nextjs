@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-x-4 items-center">
-                <button className="flex flex-row items-center gap-2 px-4 py-2 bg-white text-black text-sm hover:bg-gray-200 border-2 border-black rounded-sm transition-colors w-fit h-fit">
+                <button className="flex flex-row items-center gap-2 px-4 py-2 bg-[#f5fffa] text-black text-sm hover:bg-gray-200 border-2 border-black rounded-sm transition-colors w-fit h-fit">
                   <Download className="w-4 h-4" />
                   Export
                 </button>
