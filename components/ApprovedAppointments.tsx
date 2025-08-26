@@ -54,7 +54,7 @@ const ApprovedAppointments = () => {
       date: "Today",
       time: "9:00 AM",
       visitType: "Virtual",
-      status: "Cancelled",
+      status: "Upcoming",
       appointmentType: "Therapy Session",
       reasonForVisit: "Stress management and counseling",
       image: "/assets/appointment4.png",
