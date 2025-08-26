@@ -13,11 +13,11 @@ const SurgerySchedule = () => {
           </div>
         </div>
         <div className="w-[1000px] h-[247px] border-1 mt-4 rounded-sm p-8 items-center justify-center mx-auto">
-          <div className="pt-4 pb-4 pl-6 pr-7 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
-            <div className="ml-4">Patient</div>
-            <div className="ml-2">Date & Time</div>
-            <div>Type</div>
-            <div className="ml-2">Status</div>
+          <div className="grid grid-cols-4 bg-gray-200 text-base rounded-t- p-4 rounded-sm">
+            <div>Patient</div>
+            <div>Date & Time</div>
+            <div className="text-center">Type</div>
+            <div className="text-center">Status</div>
           </div>
         </div>
       </div>
