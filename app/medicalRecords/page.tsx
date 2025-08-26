@@ -11,7 +11,7 @@ const Home = ({
   leftButtonText = "Medical History",
   middleButtonText = "Lab Reports",
   rightButtonText = "Other",
-  defaultActive = "Approved",
+  defaultActive = "Medical History",
 }) => {
   const [activeStatus, setActiveStatus] = useState(defaultActive);
 
@@ -93,6 +93,14 @@ const Home = ({
                   {rightButtonText}
                 </button>
               </div>
+            </div>
+            <div>
+              {activeStatus === "Medical History" && "Medical History"}
+
+              {/* Show Not Approved Table */}
+              {activeStatus === "Lab Reports" && "Lab Reports"}
+
+              {activeStatus === "Other" && "Other"}
             </div>
           </div>
         </SidebarInset>
