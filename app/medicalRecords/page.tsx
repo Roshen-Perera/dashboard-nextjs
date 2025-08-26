@@ -8,19 +8,11 @@ import Image from "next/image";
 import { Download, Printer } from "lucide-react";
 import MedicalHistory from "@/components/MedicalHistory";
 
-interface PageProps {
-  leftButtonText?: string;
-  middleButtonText?: string;
-  rightButtonText?: string;
-  defaultActive?: string;
-}
-
-const Home: React.FC<PageProps> = ({
-  leftButtonText = "Medical History",
-  middleButtonText = "Lab Reports",
-  rightButtonText = "Other",
-  defaultActive = "Medical History",
-}) => {
+const Home = () => {
+  const leftButtonText = "Medical History";
+  const middleButtonText = "Lab Reports";
+  const rightButtonText = "Other";
+  const defaultActive = "Medical History";
   const [activeStatus, setActiveStatus] = useState(defaultActive);
 
   return (
@@ -104,7 +96,10 @@ const Home: React.FC<PageProps> = ({
             </div>
             <div>
               {activeStatus === "Medical History" && <MedicalHistory />}
+
+              {/* Show Not Approved Table */}
               {activeStatus === "Lab Reports" && "Lab Reports"}
+
               {activeStatus === "Other" && "Other"}
             </div>
           </div>
