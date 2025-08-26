@@ -25,40 +25,32 @@ const FilterHeader = ({
         <div className="flex items-center relative">
           <button
             onClick={() => setActiveStatus(leftButtonText)}
-            className={`px-4 py-3 text-base transition-all duration-200 relative ${
+            className={`px-4 py-3 text-base transition-all duration-200 relative border-b-2 ${
               activeStatus === leftButtonText
-                ? "text-gray-900"
-                : "text-gray-900"
+                ? "border-green-600 text-gray-900"
+                : "border-transparent text-gray-900"
             }`}
           >
             {leftButtonText}
           </button>
+
           <button
             onClick={() => setActiveStatus(rightButtonText)}
-            className={`px-4 py-3 text-base transition-all duration-200 relative ${
+            className={`px-4 py-3 text-base transition-all duration-200 relative border-b-2 ${
               activeStatus === rightButtonText
-                ? "text-gray-900"
-                : "text-gray-900"
+                ? "border-green-600 text-gray-900"
+                : "border-transparent text-gray-900"
             }`}
           >
             {rightButtonText}
           </button>
-          {/* Sliding horizontal line indicator */}
-          <div
-            className={`absolute bottom-0 h-0.5 bg-green-500 transition-all duration-300 ease-in-out ${
-              activeStatus === leftButtonText ? "left-0" : "left-1/2"
-            }`}
-            style={{
-              width: "50%",
-            }}
-          />
         </div>
 
         {/* Right side - Controls */}
         <div className="flex items-center gap-3">
           {/* Status Dropdown */}
-          <StatusMenu/>
-          <DatePicker/>
+          <StatusMenu />
+          <DatePicker />
           <button
             onClick={handleExport}
             className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1 transition-colors"
@@ -69,14 +61,10 @@ const FilterHeader = ({
         </div>
       </div>
       <div>
-        {activeStatus === "Approved" && (
-          <ApprovedAppointments/>
-        )}
+        {activeStatus === "Approved" && <ApprovedAppointments />}
 
         {/* Show Not Approved Table */}
-        {activeStatus === "Not Approved" && (
-          <NotApprovedAppointments/>
-        )}
+        {activeStatus === "Not Approved" && <NotApprovedAppointments />}
       </div>
     </>
   );
