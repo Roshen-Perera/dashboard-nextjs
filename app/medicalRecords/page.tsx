@@ -6,6 +6,7 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Download, Printer } from "lucide-react";
+import MedicalHistory from "@/components/MedicalHistory";
 
 const Home = ({
   leftButtonText = "Medical History",
@@ -95,7 +96,7 @@ const Home = ({
               </div>
             </div>
             <div>
-              {activeStatus === "Medical History" && "Medical History"}
+              {activeStatus === "Medical History" && <MedicalHistory/>}
 
               {/* Show Not Approved Table */}
               {activeStatus === "Lab Reports" && "Lab Reports"}
