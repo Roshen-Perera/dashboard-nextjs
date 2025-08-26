@@ -21,7 +21,7 @@ const NotApprovedAppointments = () => {
       status: "Pending",
       appointmentType: "Routine Check-up",
       reasonForVisit: "Annual health examination and blood work review",
-      image: "/assets/appointment1.png",
+      image: "/assets/approvedAppointment/appointment1.png",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const NotApprovedAppointments = () => {
       status: "Pending",
       appointmentType: "Follow-up",
       reasonForVisit: "Review of medication adjustments",
-      image: "/assets/appointment2.png",
+      image: "/assets/approvedAppointment/appointment2.png",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const NotApprovedAppointments = () => {
       status: "Pending",
       appointmentType: "Consultation",
       reasonForVisit: "Discussion of test results and next steps",
-      image: "/assets/appointment3.png",
+      image: "/assets/approvedAppointment/appointment3.png",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const NotApprovedAppointments = () => {
       status: "Pending",
       appointmentType: "Therapy Session",
       reasonForVisit: "Stress management and counseling",
-      image: "/assets/appointment4.png",
+      image: "/assets/approvedAppointment/appointment4.png",
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ const NotApprovedAppointments = () => {
       status: "Pending",
       appointmentType: "Dental Cleaning",
       reasonForVisit: "Routine teeth cleaning and check-up",
-      image: "/assets/appointment5.png",
+      image: "/assets/approvedAppointment/appointment5.png",
     },
   ]);
 
