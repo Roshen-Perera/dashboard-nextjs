@@ -104,10 +104,7 @@ const Home: React.FC<PageProps> = ({
             </div>
             <div>
               {activeStatus === "Medical History" && <MedicalHistory />}
-
-              {/* Show Not Approved Table */}
               {activeStatus === "Lab Reports" && "Lab Reports"}
-
               {activeStatus === "Other" && "Other"}
             </div>
           </div>
