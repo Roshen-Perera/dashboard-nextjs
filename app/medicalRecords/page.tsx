@@ -8,7 +8,14 @@ import Image from "next/image";
 import { Download, Printer } from "lucide-react";
 import MedicalHistory from "@/components/MedicalHistory";
 
-const Home = ({
+interface PageProps {
+  leftButtonText?: string;
+  middleButtonText?: string;
+  rightButtonText?: string;
+  defaultActive?: string;
+}
+
+const Home: React.FC<PageProps> = ({
   leftButtonText = "Medical History",
   middleButtonText = "Lab Reports",
   rightButtonText = "Other",
@@ -96,7 +103,7 @@ const Home = ({
               </div>
             </div>
             <div>
-              {activeStatus === "Medical History" && <MedicalHistory/>}
+              {activeStatus === "Medical History" && <MedicalHistory />}
 
               {/* Show Not Approved Table */}
               {activeStatus === "Lab Reports" && "Lab Reports"}
