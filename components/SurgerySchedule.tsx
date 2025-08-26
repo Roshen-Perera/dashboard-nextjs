@@ -12,8 +12,13 @@ const SurgerySchedule = () => {
             <Plus />
           </div>
         </div>
-        <div className="w-[1000px] h-[247px] border-1 mt-4 rounded-sm p-2 flex items-center justify-center mx-auto">
-          {/* Your content here */}
+        <div className="w-[1000px] h-[247px] border-1 mt-4 rounded-sm p-8 items-center justify-center mx-auto">
+          <div className="pt-4 pb-4 pl-6 pr-7 grid grid-cols-5 gap-4 bg-gray-200 text-base rounded-t-sm">
+            <div className="ml-4">Patient</div>
+            <div className="ml-2">Date & Time</div>
+            <div>Type</div>
+            <div className="ml-2">Status</div>
+          </div>
         </div>
       </div>
     </div>
