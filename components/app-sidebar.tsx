@@ -59,7 +59,7 @@ const data = {
         },
         {
           title: "Medical Records",
-          url: "#",
+          url: "/medicalRecords",
           isActive: false,
           icon: "/assets/icons/records.png",
         },
