@@ -3,11 +3,18 @@
 import { AppSidebar } from "@/components/app-sidebar";
 import PageHeader from "@/components/PageHeader";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Download, Printer } from "lucide-react";
 
-const Home = () => {
+const Home = ({
+  leftButtonText = "Medical History",
+  middleButtonText = "Lab Reports",
+  rightButtonText = "Other",
+  defaultActive = "Approved",
+}) => {
+  const [activeStatus, setActiveStatus] = useState(defaultActive);
+
   return (
     <>
       <SidebarProvider>
@@ -50,7 +57,43 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            
+            <div className="flex items-center justify-between px-4 py-3">
+              {/* Left side - Status toggle */}
+              <div className="flex items-center relative">
+                <button
+                  onClick={() => setActiveStatus(leftButtonText)}
+                  className={`px-4 py-3 text-base transition-all duration-200 relative border-b-2 ${
+                    activeStatus === leftButtonText
+                      ? "border-green-600 text-gray-900"
+                      : "border-transparent text-gray-900"
+                  }`}
+                >
+                  {leftButtonText}
+                </button>
+
+                <button
+                  onClick={() => setActiveStatus(middleButtonText)}
+                  className={`px-4 py-3 text-base transition-all duration-200 relative border-b-2 ${
+                    activeStatus === middleButtonText
+                      ? "border-green-600 text-gray-900"
+                      : "border-transparent text-gray-900"
+                  }`}
+                >
+                  {middleButtonText}
+                </button>
+
+                <button
+                  onClick={() => setActiveStatus(rightButtonText)}
+                  className={`px-4 py-3 text-base transition-all duration-200 relative border-b-2 ${
+                    activeStatus === rightButtonText
+                      ? "border-green-600 text-gray-900"
+                      : "border-transparent text-gray-900"
+                  }`}
+                >
+                  {rightButtonText}
+                </button>
+              </div>
+            </div>
           </div>
         </SidebarInset>
       </SidebarProvider>
