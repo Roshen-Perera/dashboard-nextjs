@@ -42,7 +42,7 @@ const ApprovedAppointments = () => {
       date: "Today",
       time: "4:00 PM",
       visitType: "In-Person",
-      status: "Completed",
+      status: "Upcoming",
       appointmentType: "Consultation",
       reasonForVisit: "Discussion of test results and next steps",
       image: "/assets/appointment3.png",
