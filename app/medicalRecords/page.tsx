@@ -1,9 +1,11 @@
+"use client"
+
 import { AppSidebar } from '@/components/app-sidebar';
 import PageHeader from '@/components/PageHeader';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import React from 'react'
 
-const MedicalRecords = () => {
+const Home = () => {
   return (
     <>
       <SidebarProvider>
@@ -18,4 +20,4 @@ const MedicalRecords = () => {
   );
 }
 
-export default MedicalRecords
+export default Home;
