@@ -122,9 +122,15 @@ const NotApprovedAppointments = () => {
                         {appointment.status}
                       </span>
                     </div>
-                    <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
-                      <Calendar className="w-4 h-4" />
-                      <span>Reschedule</span>
+                    <div className="-ml-10 flex flex-row gap-2">
+                      <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
+                        <Calendar className="w-4 h-4" />
+                        <span>Reschedule</span>
+                      </div>
+                      <div className="flex items-center space-x-1 text-base font-normal text-green-800 cursor-pointer">
+                        <Calendar className="w-4 h-4" />
+                        <span>Reschedule</span>
+                      </div>
                     </div>
                   </div>
                 </AccordionTrigger>
