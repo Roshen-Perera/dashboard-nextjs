@@ -21,7 +21,7 @@ const SurgerySchedule = () => {
             <Plus />
           </div>
         </div>
-        <div className="w-[1000px] border-1 mt-4 rounded-sm p-4 items-center justify-center mx-auto">
+        <div className="w-[1000px] border-1 mt-4 rounded-sm p-3 items-center justify-center mx-auto">
           {/* Header */}
           <div className="grid grid-cols-4 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
             <div className="whitespace-nowrap">Patient</div>
