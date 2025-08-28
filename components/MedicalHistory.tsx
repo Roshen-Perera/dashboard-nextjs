@@ -3,6 +3,7 @@ import CurrentVitals from './CurrentVitals'
 import Biometrics from './Biometrics'
 import SurgerySchedule from './SurgerySchedule'
 import Medications from './Medications'
+import MedicalConditions from './MedicalConditions'
 
 const MedicalHistory = () => {
   return (
@@ -17,6 +18,9 @@ const MedicalHistory = () => {
         </div>
         <div className="mt-4">
           <Medications />
+        </div>
+        <div className="mt-4">
+          <MedicalConditions/>
         </div>
       </div>
     </>
