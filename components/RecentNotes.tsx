@@ -1,5 +1,6 @@
 import { Plus } from 'lucide-react';
 import React from 'react'
+import RecentNote from './RecentNote';
 
 const RecentNotes = () => {
   return (
@@ -13,7 +14,7 @@ const RecentNotes = () => {
           </div>
         </div>
         <div className="flex flex-col -mt-1">
-          
+          <RecentNote/>
         </div>
       </div>
     </div>
