@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
-import React, { useState } from "react";
+import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
 const AdmissionHistory = () => {
