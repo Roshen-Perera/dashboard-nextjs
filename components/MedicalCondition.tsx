@@ -5,7 +5,7 @@ const MedicalCondition = () => {
     <div>
       <div className="flex flex-row justify-between p-3 border-1 rounded-sm mt-2">
         <div className="">
-          <p className="text-xl -mt-1 font-normal text-gray-800">
+          <p className="text-lg -mt-1 font-normal text-gray-800">
             Type 2 Diabetes
           </p>
           <p className="text-sm mt-1 font-normal text-gray-500">
