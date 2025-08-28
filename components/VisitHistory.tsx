@@ -30,20 +30,18 @@ const VisitHistory = () => {
       <div className="flex flex-row justify-between p-2">
         <div className="text-xl">Visits History</div>
       </div>
-      <div className="grid grid-cols-4 mt-3 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
+      <div className="grid grid-cols-[1fr_1fr_2fr_auto]  mt-3 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
         <div className="whitespace-nowrap">Date</div>
         <div className="whitespace-nowrap">Provider</div>
-        <div className="whitespace-nowrap ml-7">Reason</div>
+        <div className="whitespace-nowrap">Reason</div>
       </div>
       {histories.map((history) => (
         <Accordion key={history.id} type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="flex flex-row items-center text-base p-4 -mb-2 font-normal">
+            <AccordionTrigger className="grid grid-cols-[1fr_1fr_2fr_auto] items-center text-base p-4 -mb-2 font-normal">
               <div className="whitespace-nowrap">{history.date}</div>
-              <div className="whitespace-nowrap -ml-10">{history.provider}</div>
-              <div className="whitespace-nowrap">
-                {history.Reason}
-              </div>
+              <div className="whitespace-nowrap">{history.provider}</div>
+              <div className="whitespace-nowrap">{history.Reason}</div>
             </AccordionTrigger>
 
             <AccordionContent className="p-4">
