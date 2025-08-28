@@ -13,7 +13,11 @@ const MedicalConditions = () => {
             <Plus />
           </div>
         </div>
-        <MedicalCondition/>
+        <div className=''>
+          <MedicalCondition />
+          <MedicalCondition />
+          <MedicalCondition />
+        </div>
       </div>
     </div>
   );
