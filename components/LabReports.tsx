@@ -55,7 +55,7 @@ const LabReports = () => {
       {reports.map((report) => (
         <Accordion key={report.id} type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="grid grid-cols-[1fr_1fr_2fr_1fr_0.1fr_auto] items-center text-base p-4 -mb-2 font-normal">
+            <AccordionTrigger className="grid grid-cols-[1fr_1fr_2fr_1fr_0.1fr_auto] items-center text-base p-4 font-normal">
               <div>
                 <div className="text-base font-normal">{report.date}</div>
                 <div className="text-xs font-normal text-gray-500">
@@ -79,7 +79,7 @@ const LabReports = () => {
                 <Download width={15} />
               </div>
             </AccordionTrigger>
-
+            <hr />
             <AccordionContent className="p-4">
               <div className="border-1 rounded-sm">
                 <div className="grid grid-cols-[2fr_1fr_1fr_0.5fr_auto] text-base border-b-1 border-zinc-400 font-normal p-3 rounded-t-sm">
