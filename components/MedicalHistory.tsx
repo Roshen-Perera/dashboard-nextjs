@@ -4,6 +4,7 @@ import Biometrics from './Biometrics'
 import SurgerySchedule from './SurgerySchedule'
 import Medications from './Medications'
 import MedicalConditions from './MedicalConditions'
+import RecentNotes from './RecentNotes'
 
 const MedicalHistory = () => {
   return (
@@ -19,8 +20,9 @@ const MedicalHistory = () => {
         <div className="mt-4">
           <Medications />
         </div>
-        <div className="mt-4">
+        <div className="flex mt-4 justify-between">
           <MedicalConditions/>
+          <RecentNotes/>
         </div>
       </div>
     </>
