@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 const VisitHistory = () => {
-      const [activeTab, setActiveTab] = useState("Notes");
-    
-      const tabs = ["Notes", "Medications", "Instructions", "Reason"];
-    
+  const [activeTab, setActiveTab] = useState("Notes");
+
+  const tabs = ["Notes", "Medications", "Instructions", "Reason"];
+
   return (
     <div className="w-[1060px] border-1 rounded-sm p-2 items-center">
       <div className="flex flex-row justify-between p-2">
