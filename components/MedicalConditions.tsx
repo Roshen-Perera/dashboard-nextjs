@@ -1,5 +1,6 @@
 import { Plus } from 'lucide-react';
 import React from 'react'
+import MedicalCondition from './MedicalCondition';
 
 const MedicalConditions = () => {
   return (
@@ -12,6 +13,7 @@ const MedicalConditions = () => {
             <Plus />
           </div>
         </div>
+        <MedicalCondition/>
       </div>
     </div>
   );
