@@ -8,7 +8,7 @@ const MedicalCondition = () => {
           <p className="text-xl -mt-1 font-normal text-gray-800">
             Type 2 Diabetes
           </p>
-          <p className="text-sm mt-2 font-normal text-gray-500">
+          <p className="text-sm mt-1 font-normal text-gray-500">
             Diagnosed: jan 2020
           </p>
         </div>
