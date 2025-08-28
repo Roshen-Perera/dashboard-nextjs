@@ -8,7 +8,6 @@ import {
 
 const VisitHistory = () => {
   const [activeTab, setActiveTab] = useState("Notes");
-
   const tabs = ["Notes", "Medications", "Instructions", "Reason"];
 
   return (
