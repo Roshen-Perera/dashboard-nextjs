@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Download, Printer } from "lucide-react";
 import MedicalHistory from "@/components/MedicalHistory";
+import LabReports from "@/components/LabReports";
 
 const Home = () => {
   const leftButtonText = "Medical History";
@@ -98,7 +99,7 @@ const Home = () => {
               {activeStatus === "Medical History" && <MedicalHistory />}
 
               {/* Show Not Approved Table */}
-              {activeStatus === "Lab Reports" && "Lab Reports"}
+              {activeStatus === "Lab Reports" && <LabReports/>}
 
               {activeStatus === "Other" && "Other"}
             </div>
