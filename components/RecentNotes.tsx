@@ -15,6 +15,8 @@ const RecentNotes = () => {
         </div>
         <div className="flex flex-col -mt-1">
           <RecentNote/>
+          <RecentNote/>
+          <RecentNote/>
         </div>
       </div>
     </div>
