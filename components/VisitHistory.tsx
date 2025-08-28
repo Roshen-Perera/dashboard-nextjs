@@ -11,10 +11,10 @@ const VisitHistory = () => {
       <div className="flex flex-row justify-between p-2">
         <div className="text-xl">Visits History</div>
       </div>
-      <div className="grid grid-cols-3 mt-3 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
+      <div className="grid grid-cols-4 mt-3 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
         <div className="whitespace-nowrap">Date</div>
-        <div className="whitespace-nowrap -ml-20">Provider</div>
-        <div className="whitespace-nowrap -ml-0">Reason</div>
+        <div className="whitespace-nowrap -ml-4">Provider</div>
+        <div className="whitespace-nowrap ml-7">Reason</div>
       </div>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
