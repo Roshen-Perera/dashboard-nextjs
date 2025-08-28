@@ -79,7 +79,27 @@ const LabReports = () => {
               </div>
             </AccordionTrigger>
 
-            <AccordionContent className="p-4"></AccordionContent>
+            <AccordionContent className="p-4">
+              <div className="border-1 rounded-sm">
+                <div className="grid grid-cols-[2fr_1fr_1fr_auto] text-base border-b-1 border-zinc-400 font-normal p-3 rounded-t-sm">
+                  <div className="whitespace-nowrap">Test Order</div>
+                  <div className="whitespace-nowrap">Result</div>
+                  <div className="whitespace-nowrap">Normal Range</div>
+                </div>
+                <div>
+                  <div className="grid grid-cols-[2fr_1fr_1fr_auto] text-base mb-3 font-normal p-3">
+                    <div className="whitespace-nowrap">
+                      Body fluid culture and sensitivity
+                    </div>
+                    <div className="whitespace-nowrap">10</div>
+                    <div className="whitespace-nowrap">25 - 35</div>
+                    <div className="flex flex-row">
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       ))}
