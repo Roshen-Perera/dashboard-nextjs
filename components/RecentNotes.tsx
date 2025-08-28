@@ -9,7 +9,7 @@ const RecentNotes = () => {
             <p className="text-sm mt-1 font-normal text-gray-500">
               Feb 20, 2025{" "}
             </p>
-            <p className="text-base -mt-1 font-normal text-gray-800">
+            <p className="text-base mt-1 font-normal text-gray-800">
               Lorem ipsum ipsum viverra sed convallis ut vitae augue nulla
               pharetra cum in a odio.{" "}
             </p>
