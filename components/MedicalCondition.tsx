@@ -3,7 +3,7 @@ import React from 'react'
 const MedicalCondition = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between p-3 border-1 rounded-sm">
+      <div className="flex flex-row justify-between p-3 border-1 rounded-sm mt-2">
         <div className="">
           <p className="text-xl -mt-1 font-normal text-gray-800">
             Type 2 Diabetes
