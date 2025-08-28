@@ -5,7 +5,7 @@ import MedicalCondition from './MedicalCondition';
 const MedicalConditions = () => {
   return (
     <div>
-      <div className="w-[520px] h-[285px] border-1 rounded-sm p-2">
+      <div className="w-[520px] h-[295px] border-1 rounded-sm p-2">
         <div className="flex flex-row justify-between p-2">
           <div className="text-xl">Medical Conditions</div>
           <div className="flex items-center text-green-500 gap-2">
