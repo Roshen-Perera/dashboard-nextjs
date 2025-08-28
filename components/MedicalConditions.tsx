@@ -13,7 +13,7 @@ const MedicalConditions = () => {
             <Plus />
           </div>
         </div>
-        <div className=''>
+        <div className='-mt-2'>
           <MedicalCondition />
           <MedicalCondition />
           <MedicalCondition />
