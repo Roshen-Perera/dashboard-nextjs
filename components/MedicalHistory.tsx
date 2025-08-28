@@ -6,6 +6,7 @@ import Medications from './Medications'
 import MedicalConditions from './MedicalConditions'
 import RecentNotes from './RecentNotes'
 import VisitHistory from './VisitHistory'
+import AdmissionHistory from './AdmissionHistory'
 
 const MedicalHistory = () => {
   return (
@@ -27,6 +28,9 @@ const MedicalHistory = () => {
         </div>
         <div className="mt-4">
           <VisitHistory />
+        </div>
+        <div className="mt-4">
+          <AdmissionHistory />
         </div>
       </div>
     </>
