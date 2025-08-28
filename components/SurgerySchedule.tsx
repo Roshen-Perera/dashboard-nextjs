@@ -33,7 +33,7 @@ const SurgerySchedule = () => {
           {/* Rows */}
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger className="flex flex-row items-center text-base p-4 font-normal">
+              <AccordionTrigger className="flex flex-row items-center text-base p-4 -mb-2 font-normal">
                 <div className="whitespace-nowrap">John Doe</div>
                 <div className="whitespace-nowrap">27 Aug, 10:30 AM</div>
                 <div className="whitespace-nowrap">Checkup</div>
