@@ -23,7 +23,7 @@ const LabReports = () => {
       time: "09:00 AM",
       type: "Blood Test",
       name: "Complete Blood Count",
-      status: "pending",
+      status: "normal",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const LabReports = () => {
       time: "09:00 AM",
       type: "Blood Test",
       name: "Complete Blood Count",
-      status: "pending",
+      status: "normal",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const LabReports = () => {
       time: "09:00 AM",
       type: "Blood Test",
       name: "Complete Blood Count",
-      status: "pending",
+      status: "normal",
     },
   ]);
   return (
@@ -63,7 +63,17 @@ const LabReports = () => {
               </div>
               <div className="whitespace-nowrap">{report.type}</div>
               <div className="whitespace-nowrap">{report.name}</div>
-              <div className="whitespace-nowrap">{report.status}</div>
+              <div>
+                <span
+                  className={`px-3 py-1 rounded-xl text-xs font-normal ${
+                    report.status === "Normal" || report.status === "normal"
+                      ? "bg-[#0099665b] text-black" // Yellow for "Normal"
+                      : "bg-[#eab20870] text-black" // Greenish for "Pending"
+                  }`}
+                >
+                  {report.status}
+                </span>
+              </div>
               <div className="text-green-500">
                 <Download width={15} />
               </div>
