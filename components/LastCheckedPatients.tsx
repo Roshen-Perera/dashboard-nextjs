@@ -9,7 +9,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=1",
+      avatar: "/assets/lastCheckedPatients/patient1.png",
     },
     {
       id: "P-001234",
@@ -17,7 +17,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=2",
+      avatar: "/assets/lastCheckedPatients/patient2.png",
     },
     {
       id: "P-001234",
@@ -25,7 +25,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=3",
+      avatar: "/assets/lastCheckedPatients/patient3.png",
     },
     {
       id: "P-001234",
@@ -33,7 +33,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=4",
+      avatar: "/assets/lastCheckedPatients/patient4.png",
     },
     {
       id: "P-001234",
@@ -41,7 +41,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=5",
+      avatar: "/assets/lastCheckedPatients/patient5.png",
     },
     {
       id: "P-001234",
@@ -49,7 +49,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=6",
+      avatar: "/assets/lastCheckedPatients/patient6.png",
     },
     {
       id: "P-001234",
@@ -57,7 +57,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=7",
+      avatar: "/assets/lastCheckedPatients/patient7.png",
     },
     {
       id: "P-001234",
@@ -65,7 +65,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=8",
+      avatar: "/assets/lastCheckedPatients/patient8.png",
     },
     {
       id: "P-001234",
@@ -73,7 +73,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=9",
+      avatar: "/assets/lastCheckedPatients/patient9.png",
     },
     {
       id: "P-001234",
@@ -81,7 +81,7 @@ const LastCheckedPatients = () => {
       email: "johnsmith@example.com",
       lastVisit: { date: "Jan 25, 2024", time: "09:30 AM" },
       reason: "Regular Checkup",
-      avatar: "https://i.pravatar.cc/150?img=10",
+      avatar: "/assets/lastCheckedPatients/patient10.png",
     },
   ]);
   return (
