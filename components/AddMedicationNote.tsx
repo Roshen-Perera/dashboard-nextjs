@@ -54,7 +54,7 @@ export function AddMedicationNote() {
               </Button>
             </DialogClose>
             <Button type="submit" className="bg-green-600 font-normal">
-              Add Medication
+              Add Medication Note
             </Button>
           </DialogFooter>
         </DialogContent>
