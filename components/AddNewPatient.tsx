@@ -11,13 +11,17 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Bed } from "lucide-react";
 
-export function DialogDemo() {
+export function AddNewPatient() {
   return (
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <Button variant="outline">Open Dialog</Button>
+          <div className="ml-3 flex gap-2 text-sm text-green-600">
+            <Bed size={18} />
+            Add new Patient
+          </div>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>

@@ -8,6 +8,7 @@ import { Bed, Calendar } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
 import Image from "next/image";
+import { AddNewPatient } from "./AddNewPatient";
 
 const ApprovedAppointments = () => {
   const [appointments] = useState([
@@ -154,13 +155,7 @@ const ApprovedAppointments = () => {
                       >
                         Mark as Checked
                       </label>
-                      <a
-                        className="ml-3 flex gap-2 text-sm text-green-600"
-                        href="#"
-                      >
-                        <Bed size={18} />
-                        Admit Patient
-                      </a>
+                      <AddNewPatient />
                     </div>
 
                     <div className="flex items-center">
