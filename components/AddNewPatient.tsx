@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -24,9 +23,11 @@ export function AddNewPatient() {
             Add new Patient
           </div>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] bg-[#f5fffa]">
           <DialogHeader>
-            <DialogTitle className="font-normal mb-4">Admit Patient</DialogTitle>
+            <DialogTitle className="font-normal mb-4">
+              Admit Patient
+            </DialogTitle>
           </DialogHeader>
 
           <div className="grid gap-4">
@@ -43,16 +44,22 @@ export function AddNewPatient() {
               <Input id="discharge-date" type="date" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="notes">Notes</Label>
-              <Textarea id="notes" rows={3} placeholder="Enter notes here..." />
+              <Label htmlFor="notes" className="font-normal">
+                Notes
+              </Label>
+              <Textarea id="notes" rows={5} placeholder="Enter notes here..." />
             </div>
           </div>
 
           <DialogFooter>
             <DialogClose asChild>
-              <Button variant="outline">Cancel</Button>
+              <Button variant="outline" className="bg-[#f5fffa] font-normal">
+                Cancel
+              </Button>
             </DialogClose>
-            <Button type="submit">Confirm Admission</Button>
+            <Button type="submit" className="bg-green-600 font-normal">
+              Confirm Admission
+            </Button>
           </DialogFooter>
         </DialogContent>
       </form>
