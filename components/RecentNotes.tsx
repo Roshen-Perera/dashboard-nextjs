@@ -1,6 +1,6 @@
-import { Plus } from 'lucide-react';
 import React from 'react'
 import RecentNote from './RecentNote';
+import { AddMedicationNote } from './AddMedicationNote';
 
 const RecentNotes = () => {
   return (
@@ -8,10 +8,7 @@ const RecentNotes = () => {
       <div className="w-[520px] h-[295px] border-1 rounded-sm p-1">
         <div className="flex flex-row justify-between p-2">
           <div className="text-xl">Recent Notes</div>
-          <div className="flex items-center text-green-500 gap-2">
-            <p className="text-base">New Note</p>
-            <Plus />
-          </div>
+          <AddMedicationNote/>
         </div>
         <div className="flex flex-col -mt-1">
           <RecentNote/>
