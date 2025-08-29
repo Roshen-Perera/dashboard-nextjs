@@ -12,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Bed } from "lucide-react";
+import { Textarea } from "./ui/textarea";
 
 export function AddNewPatient() {
   return (
@@ -25,27 +26,33 @@ export function AddNewPatient() {
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you&apos;re
-              done.
-            </DialogDescription>
+            <DialogTitle className="font-normal mb-4">Admit Patient</DialogTitle>
           </DialogHeader>
+
           <div className="grid gap-4">
             <div className="grid gap-3">
-              <Label htmlFor="name-1">Name</Label>
-              <Input id="name-1" name="name" defaultValue="Pedro Duarte" />
+              <Label htmlFor="admission-date" className="font-normal">
+                Admission Date
+              </Label>
+              <Input id="admission-date" type="date" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="username-1">Username</Label>
-              <Input id="username-1" name="username" defaultValue="@peduarte" />
+              <Label htmlFor="discharge-date" className="font-normal">
+                Expected Discharge Date
+              </Label>
+              <Input id="discharge-date" type="date" />
+            </div>
+            <div className="grid gap-3">
+              <Label htmlFor="notes">Notes</Label>
+              <Textarea id="notes" rows={3} placeholder="Enter notes here..." />
             </div>
           </div>
+
           <DialogFooter>
             <DialogClose asChild>
               <Button variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit">Save changes</Button>
+            <Button type="submit">Confirm Admission</Button>
           </DialogFooter>
         </DialogContent>
       </form>
