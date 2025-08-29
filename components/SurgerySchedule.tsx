@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
+import { ScheduleNewSurgery } from "./ScheduleNewSurgery";
 
 const SurgerySchedule = () => {
   const [activeTab, setActiveTab] = useState("Notes");
@@ -16,10 +17,7 @@ const SurgerySchedule = () => {
       <div className="w-[1060px] border-1 rounded-sm p-2 items-center">
         <div className="flex flex-row justify-between p-2">
           <div className="text-xl">Surgeries</div>
-          <div className="flex items-center text-green-500 gap-2">
-            <p className="text-base">Schedule Surgery</p>
-            <Plus />
-          </div>
+          <ScheduleNewSurgery />
         </div>
         <div className="w-[1000px] border-1 mt-4 rounded-sm p-3 items-center justify-center mx-auto">
           {/* Header */}
