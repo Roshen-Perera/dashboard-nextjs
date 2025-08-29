@@ -87,7 +87,7 @@ const LastCheckedPatients = () => {
   ]);
   return (
     <div>
-      <div className="grid grid-cols-5 bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
+      <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr_auto] bg-gray-200 text-lg font-normal p-4 rounded-t-sm">
         <div className="whitespace-nowrap">Patient Name</div>
         <div className="whitespace-nowrap">Patient ID</div>
         <div className="whitespace-nowrap">Last Visit</div>
@@ -96,7 +96,7 @@ const LastCheckedPatients = () => {
       {patients.map((patient, index) => (
         <div
           key={index}
-          className="grid grid-cols-5 flex-1 p-4"
+          className="grid grid-cols-[1.5fr_1fr_1fr_1fr_1fr_auto] flex-1 p-4"
         >
           <div className="flex items-center space-x-2">
             <Image src={patient.avatar} alt="appo" width={40} height={40} />
