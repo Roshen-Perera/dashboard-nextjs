@@ -71,7 +71,7 @@ export function AddMedicalCondition() {
               </Button>
             </DialogClose>
             <Button type="submit" className="bg-green-600 font-normal">
-              Confirm Admission
+              Add Condition
             </Button>
           </DialogFooter>
         </DialogContent>
