@@ -12,6 +12,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Bed } from "lucide-react";
 import { Textarea } from "./ui/textarea";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowDown01Icon } from "@hugeicons/core-free-icons";
 
 export function AddNewPatient() {
   return (
@@ -32,7 +35,22 @@ export function AddNewPatient() {
 
           <div className="grid gap-4">
             <div className="grid gap-3">
-              <Label htmlFor="admission-date" className="font-normal">
+              <Label htmlFor="admission-date" className="font-normal ">Select Department</Label>
+              <DropdownMenu>
+                <DropdownMenuTrigger id="select-department" className="flex bg-[#f5fffa] font-normal justify-between rounded-sm border-900-green border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100">
+                  Select Department
+                  <HugeiconsIcon icon={ArrowDown01Icon} />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem>Upcoming</DropdownMenuItem>
+                  <DropdownMenuItem>Completed</DropdownMenuItem>
+                  <DropdownMenuItem>Cancelled</DropdownMenuItem>
+                  <DropdownMenuItem>Subscription</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+            <div className="grid gap-3">
+              <Label htmlFor="admission-date" className="font-normal ">
                 Admission Date
               </Label>
               <Input id="admission-date" type="date" />
