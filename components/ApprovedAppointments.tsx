@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bed, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import React, { useState } from "react";
 import { Textarea } from "./ui/textarea";
 import Image from "next/image";
