@@ -18,7 +18,7 @@ export function AddNewPatient() {
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <div className="ml-3 flex gap-2 text-sm text-green-600">
+          <div className="ml-3 flex gap-2 text-sm text-green-600 cursor-pointer hover:text-green-900 transition-colors">
             <Bed size={18} />
             Add new Patient
           </div>
