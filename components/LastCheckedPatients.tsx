@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { Calendar, ScrollText } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -121,8 +121,8 @@ const LastCheckedPatients = () => {
           <div className="flex items-center text-base font-normal">
             <span>{patient.reason}</span>
           </div>
-          <div className="flex items-center text-base font-normal text-green-800 cursor-pointer">
-            <Calendar className="w-4 h-4" />
+          <div className="flex items-center text-base font-normal text-green-800 cursor-pointer gap-2">
+            <ScrollText className="w-4 h-4" />
             <span>Reschedule</span>
           </div>
         </div>
