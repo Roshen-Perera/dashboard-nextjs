@@ -93,17 +93,7 @@ const LastCheckedPatients = () => {
         <div className="whitespace-nowrap">Visit Reason</div>
       </div>
       {patients.map((patient, index) => (
-        <div key={index} className="grid grid-cols-5 p-4 border-b ">
-          <div className="flex items-center">
-            <Image src={patient.avatar} alt={patient.name} width={40} height={40} className="rounded-full mr-2" />
-            <span>{patient.name}</span>
-          </div>
-          <div className="whitespace-nowrap -ml-4">{patient.id}</div>
-          <div className="whitespace-nowrap ml-6">
-            {patient.lastVisit.date} at {patient.lastVisit.time}
-          </div>
-          <div className="whitespace-nowrap">{patient.reason}</div>
-        </div>
+        
       ))}
     </div>
   );
