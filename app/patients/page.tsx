@@ -2,6 +2,7 @@
 
 import { AppSidebar } from '@/components/app-sidebar';
 import { DatePicker } from '@/components/DatePicker';
+import LastCheckedPatients from '@/components/LastCheckedPatients';
 import PageHeader from '@/components/PageHeader';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import React, { useState } from 'react'
@@ -51,7 +52,7 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                {activeStatus === "Last Checked" && "<Last Checked />"}
+                {activeStatus === "Last Checked" && <LastCheckedPatients />}
 
                 {/* Show Not Approved Table */}
                 {activeStatus === "Upcoming" && "<Upcoming />"}
