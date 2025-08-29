@@ -35,9 +35,14 @@ export function AddNewPatient() {
 
           <div className="grid gap-4">
             <div className="grid gap-3">
-              <Label htmlFor="admission-date" className="font-normal ">Select Department</Label>
+              <Label htmlFor="selectDepartment" className="font-normal ">
+                Select Department
+              </Label>
               <DropdownMenu>
-                <DropdownMenuTrigger id="select-department" className="flex bg-[#f5fffa] font-normal justify-between rounded-sm border-900-green border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100">
+                <DropdownMenuTrigger
+                  id="selectDepartment"
+                  className="flex bg-[#f5fffa] font-normal justify-between rounded-sm border-900-green border-1 p-2 gap-2 hover:cursor-pointer hover:bg-green-100"
+                >
                   Select Department
                   <HugeiconsIcon icon={ArrowDown01Icon} />
                 </DropdownMenuTrigger>
@@ -50,16 +55,16 @@ export function AddNewPatient() {
               </DropdownMenu>
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="admission-date" className="font-normal ">
+              <Label htmlFor="admissionDate" className="font-normal ">
                 Admission Date
               </Label>
-              <Input id="admission-date" type="date" />
+              <Input id="admissionDate" type="date" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="discharge-date" className="font-normal">
+              <Label htmlFor="dischargeDate" className="font-normal">
                 Expected Discharge Date
               </Label>
-              <Input id="discharge-date" type="date" />
+              <Input id="dischargeDate" type="date" />
             </div>
             <div className="grid gap-3">
               <Label htmlFor="notes" className="font-normal">
