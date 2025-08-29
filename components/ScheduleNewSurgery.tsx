@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Bed } from "lucide-react";
+import { Plus } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -21,9 +21,9 @@ export function ScheduleNewSurgery() {
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <div className="ml-3 flex gap-2 text-sm text-green-600 cursor-pointer hover:text-green-900 transition-colors">
-            <Bed size={18} />
-            Add new Patient
+          <div className="flex items-center text-green-500 gap-2 cursor-pointer">
+            <p className="text-base">Schedule Surgery</p>
+            <Plus />
           </div>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] bg-[#f5fffa]">
@@ -76,13 +76,21 @@ export function ScheduleNewSurgery() {
               <Label htmlFor="reason" className="font-normal">
                 Reason for Surgery
               </Label>
-              <Textarea id="reason" rows={5} placeholder="Enter reason here..." />
+              <Textarea
+                id="reason"
+                rows={5}
+                placeholder="Enter reason here..."
+              />
             </div>
             <div className="grid gap-3">
               <Label htmlFor="instructions" className="font-normal">
                 Instructions
               </Label>
-              <Textarea id="instructions" rows={5} placeholder="Enter instructions here..." />
+              <Textarea
+                id="instructions"
+                rows={5}
+                placeholder="Enter instructions here..."
+              />
             </div>
           </div>
 
