@@ -20,7 +20,7 @@ export function AddMedicalCondition() {
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <div className="flex items-center text-green-500 gap-2">
+          <div className="flex items-center text-green-500 gap-2 cursor-pointer">
             <p className="text-base">Add New</p>
             <Plus />
           </div>
