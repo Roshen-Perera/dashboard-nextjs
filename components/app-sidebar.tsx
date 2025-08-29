@@ -41,7 +41,7 @@ const data = {
         },
         {
           title: "Patients",
-          url: "#",
+          url: "/patients",
           isActive: false,
           icon: "/assets/icons/patient.png",
         },
