@@ -6,7 +6,6 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { CircleCheck, CircleX, Download } from "lucide-react";
-import Image from "next/image";
 
 const LabReports = () => {
   const [reports] = useState([
