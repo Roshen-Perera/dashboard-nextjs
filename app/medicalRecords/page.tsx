@@ -5,9 +5,11 @@ import PageHeader from "@/components/PageHeader";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Download, Printer } from "lucide-react";
+import { Download, Plus, Printer } from "lucide-react";
 import MedicalHistory from "@/components/MedicalHistory";
 import LabReports from "@/components/LabReports";
+import StatusMenu from "@/components/StatusMenu";
+import { DatePicker } from "@/components/DatePicker";
 
 const Home = () => {
   const leftButtonText = "Medical History";
@@ -94,12 +96,23 @@ const Home = () => {
                   {rightButtonText}
                 </button>
               </div>
+              {activeStatus === "Lab Reports" && (
+                <div className="flex items-center gap-3">
+                  {/* Status Dropdown */}
+                  <StatusMenu />
+                  <DatePicker />
+                  <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-normal rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1 transition-colors">
+                    <Plus className="w-4 h-4" />
+                    New Test
+                  </button>
+                </div>
+              )}
             </div>
             <div>
               {activeStatus === "Medical History" && <MedicalHistory />}
 
               {/* Show Not Approved Table */}
-              {activeStatus === "Lab Reports" && <LabReports/>}
+              {activeStatus === "Lab Reports" && <LabReports />}
 
               {activeStatus === "Other" && "Other"}
             </div>
