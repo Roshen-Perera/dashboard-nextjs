@@ -28,9 +28,7 @@ export function RequestTest() {
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] bg-[#f5fffa]">
           <DialogHeader>
-            <DialogTitle className="font-normal mb-4">
-              Admit Patient
-            </DialogTitle>
+            <DialogTitle className="font-normal mb-4">Request Test</DialogTitle>
           </DialogHeader>
 
           <div className="grid gap-4">
