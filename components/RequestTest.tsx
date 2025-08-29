@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Bed } from "lucide-react";
+import { Bed, Plus } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -21,10 +21,10 @@ export function RequestTest() {
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <div className="ml-3 flex gap-2 text-sm text-green-600 cursor-pointer hover:text-green-900 transition-colors">
-            <Bed size={18} />
-            Add new Patient
-          </div>
+          <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-normal rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1 transition-colors">
+            <Plus className="w-4 h-4" />
+            New Test
+          </button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] bg-[#f5fffa]">
           <DialogHeader>
@@ -64,7 +64,11 @@ export function RequestTest() {
               <Label htmlFor="reasonForTest" className="font-normal">
                 Reason for Test
               </Label>
-              <Textarea id="reasonForTest" rows={5} placeholder="Enter reason for test here..." />
+              <Textarea
+                id="reasonForTest"
+                rows={5}
+                placeholder="Enter reason for test here..."
+              />
             </div>
           </div>
 
