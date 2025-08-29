@@ -1,4 +1,4 @@
-import { Plus } from 'lucide-react';
+
 import React from 'react'
 import MedicalCondition from './MedicalCondition';
 import { AddMedicalCondition } from './AddMedicalCondition';
