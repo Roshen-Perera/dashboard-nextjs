@@ -10,6 +10,7 @@ import MedicalHistory from "@/components/MedicalHistory";
 import LabReports from "@/components/LabReports";
 import StatusMenu from "@/components/StatusMenu";
 import { DatePicker } from "@/components/DatePicker";
+import { RequestTest } from "@/components/RequestTest";
 
 const Home = () => {
   const leftButtonText = "Medical History";
@@ -101,10 +102,7 @@ const Home = () => {
                   {/* Status Dropdown */}
                   <StatusMenu />
                   <DatePicker />
-                  <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-normal rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1 transition-colors">
-                    <Plus className="w-4 h-4" />
-                    New Test
-                  </button>
+                  <RequestTest />
                 </div>
               )}
             </div>
