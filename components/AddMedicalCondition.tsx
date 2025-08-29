@@ -15,7 +15,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowDown01Icon } from "@hugeicons/core-free-icons";
 import { Plus } from "lucide-react";
 
-export function AddCondition() {
+export function AddMedicalCondition() {
   return (
     <Dialog>
       <form>
